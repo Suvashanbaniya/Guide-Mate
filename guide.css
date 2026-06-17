@@ -1,0 +1,72 @@
+*{
+    margin :0 ; /*to remove the spacing */
+    padding : 0 ; 
+    box-sizing:border-box;
+}
+
+body {
+    height:100vh;
+    background :
+    linear-gradient(
+        rgba(0,0,0,0.35),
+        rgba(0, 0, 0, 0.45)
+    ),
+    url("img/mountain.jpg");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    text-align:center;
+}
+
+.logo {/* to cutomize and fix the logo of guide mate */
+    width:120px;
+    height:120px;
+    background:white;
+    padding:12px;
+    border-radius:20px;
+    object-fit:cover;
+}
+
+.Title {
+    color:white;
+    font-size:60px;
+    margin-top:25px;
+    font-family: Arial, sans-serif;
+}
+
+.slogan{
+    color:white;
+    font-size:22px;
+    margin-top:10px;
+
+}
+.btn{
+    margin-top:40px;
+    padding:15px 35px;
+    background:#0c7c77;
+    color:white;
+    border-radius:20px;
+    font-size:17px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.4s;
+
+}
+.btn:hover{
+    transform:scale(1.05);
+    background:#11948e;
+}
+
+.footer-text{
+    display:block;
+    margin-top:20px;
+    color:#efefef;
+    font-size:20px;
+}
