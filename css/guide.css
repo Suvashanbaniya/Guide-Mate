@@ -48,6 +48,7 @@ body {
 
 }
 .btn{
+    display:inline-block;
     margin-top:40px;
     padding:15px 35px;
     background:#0c7c77;

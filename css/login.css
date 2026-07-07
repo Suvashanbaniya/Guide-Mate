@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+
+body{
+    background:#f4f6fb;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+
+}
+/*  main card */
+
+.login-container{
+    width:1000px;
+    height:600px;
+    display:flex;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0.15);
+
+}
+
+/* left side */
+
+.left-panel{
+    width:45%;
+    color:white;
+    padding:50px;
+
+    background:
+    linear-gradient(rgba(21, 0, 159, 0.968),
+    rgba(1, 24, 60, 0.8)),
+    url("img/login.jpg");
+
+    background-size:cover;
+
+}
+.logo{
+    width:60px;
+    margin-bottom:20px;
+
+}
+
+.left-panel p{
+    margin-top:20px;
+    line-height:1.6;
+
+}
+
+/*right side */
+.right-panel{
+    width:55%;
+    padding:60px;
+
+}
+
+/* Tabs */
+
+.tabs {
+    display:flex;
+    justify-content :center;
+    gap:40px;
+    margin-bottom:40px;
+}
+
+.tabs button{
+    border:none;
+    background:none;
+    cursor:pointer;
+    font-size:16px;
+    padding-bottom:8px
+
+}
+
+.active {
+    border-bottom:3px solid #0d4a8b;
+    color:#0d4a8b;
+    font-weight:bold;
+
+}
+
+/* this is form main part */
+form {
+    margin-top:30px;/* for spacing*/
+
+}
+label{
+    display:block;
+    margin-top:20px;
+    margin-bottom:8px
+}
+
+input{
+    width:100%;
+    padding:14px;
+    border :1px solid #ccc;
+    border-radius:10px;
+}
+
+.login-btn{
+    width:100%;
+    margin-top:30px;
+    padding:15px;
+    background:#0d4a8b;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+
+}
+/* divider */
+.divider{
+    text-align:center ;/* to continue with part */
+    margin :40px 0 20 px;
+    color:#777;
+}
+
+.social{
+    display:flex; /* for google and facebook */
+    gap:20px;
+
+}
+.social button{
+    flex:1;
+    padding : 1px solid #ccc;
+    border-radius:10px;
+    background:white;
+    cursor:pointer;
+}
