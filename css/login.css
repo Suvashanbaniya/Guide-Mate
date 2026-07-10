@@ -118,13 +118,13 @@ input{
 /* divider */
 .divider{
     text-align:center ;/* to continue with part */
-    margin :40px 0 20 px;
+    margin :10px 0 20 px;
     color:#777;
 }
 
 .social{
     display:flex; /* for google and facebook */
-    gap:20px;
+    gap:30px;
 
 }
 .social button{
@@ -133,4 +133,65 @@ input{
     border-radius:10px;
     background:white;
     cursor:pointer;
+}
+
+
+
+
+/*  popular destination section */
+
+
+
+.popular{
+    width:90%;
+    margin :70px auto;
+}
+.section-title {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+
+
+
+}
+
+/* main heading */
+.section-title h2{
+    font-size:34px;
+    color: #1b1b1b;
+
+}
+
+/*descsription */
+.section-title p {
+    color:#777;
+    margin-top : 8pc;
+}
+
+.section-title a{
+    color:#0057b8;
+    font-weight:600px;
+    transition:3s;
+}
+.section-title a:hover{
+    color: #003d73;
+
+}
+
+
+/* destination card */
+
+.destination-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+}
+
+.large{
+    position:relative;
+    overflow:hidden;
+    border-radius:20px;
+    height:500px;
+
 }
