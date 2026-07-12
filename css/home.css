@@ -99,7 +99,7 @@ nav ul li a:hover{
 /* hero section */
 .hero {
     width:90%;
-    height:500px;
+    height:420px;
     margin: 40px auto ; 
     border-radius:20px;
     overflow:hidden;
@@ -163,4 +163,168 @@ nav ul li a:hover{
 }
 .search-box button:hover{
     background:#003d73;
+}
+
+
+
+/*  popular destination section */
+
+
+
+.popular{
+    width:90%;
+    max-width:1440px;
+    margin :70px auto;
+}
+.section-title {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+
+
+
+}
+
+/* main heading */
+.section-title h2{
+    font-size:30px;
+    font-weight:700;
+    color: #0B3B6E
+
+}
+
+/*descsription */
+.section-title p {
+    color:#777;
+    margin-top : 5px;
+    font-size:15px;
+}
+
+.section-title a{
+    color:#0057b8;
+    font-weight:600px;
+    transition:3s;
+}
+.section-title a:hover{
+    color: #003d73;
+
+}
+
+
+/* destination card */
+
+.destination-grid{
+    display:grid;
+    grid-template-columns:2fr 1fr;
+    gap:25px;
+    align-items:stretch;
+}
+
+.large{
+    position:relative;
+    overflow:hidden;
+    border-radius:20px;
+    height:450px;
+    cursor:pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.small-cards{
+    display:grid;
+    grid-template-rows:repeat(3,1fr);
+    gap:20px;
+}
+
+.card{ /* photos */
+    position:relative;
+    overflow:hidden;
+    border-radius:10px;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,.15)
+}
+
+
+/*height of the small cards */
+.small-cards .card{
+    height:136px;
+}
+
+/*images */
+
+.large img,
+
+.card img{
+    width:100%;
+    height:100%;
+    object-fit:cover; /* removes stretch */
+    transition:5s;
+}
+/*zoom effect*/
+
+.card:hover img,
+.large:hover img{
+    transform:scale(1.08);
+}
+
+/* image overlay */ /* important*/
+.large::before,
+.card::before{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    background:
+        linear-gradient(
+            transparent,
+            rgba(0,0,0,.075)
+        );
+        z-index:1;}
+   
+        
+        /*carad text*/
+
+ .card-info{
+    position:absolute;
+    left:20px;
+    bottom:20px;
+    color:white;
+    z-index:2;
+ } 
+ 
+ .card-info h3{
+    font-size:10px;
+    font-weight:600;
+    margin-bottom:5px;
+ }
+
+ .card-info p{
+    font-size:10px;
+    color:#eeeeee;
+ }
+
+ .card,
+ .large{
+    transition:.35s;
+
+ }
+
+ .card:hover,
+ .large:hover{
+    transform:translateY(-8px);
+ }
+
+ .section-title a/* view all */
+ {
+    text-decoration:none;
+    
+ }
+
+/* -----------------recoemedation guide ===========*/
+
+.guides{
+    width:90%
 }
