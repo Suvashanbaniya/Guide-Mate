@@ -1,0 +1,339 @@
+/* remove background default spacing */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/*            body */
+
+body{
+    font-family:'Poopins',sans-serif;
+    background:#F5F7FA;
+    color:#333;
+}
+
+/* navbar */
+.navbar{
+    width:100%;
+    height:80px;
+    background:#ffffff;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 60px;
+    box-shadow:0  3px 12px rgba(0,0,0,.08);
+    position:sticky;
+    top:0;
+    z-index:1000;
+}
+
+/* logo */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+.logo img{
+    width:50px;
+}
+.logo h2 {
+    color:#0B4EA2;
+    font-size:24px;
+}
+
+
+/*               Navigation          */
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:35px; /* gap of nav like home find guides */
+
+}
+
+nav ul li a {
+    text-decoration:none;
+    color:#555;
+    font-size:16px;
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+    color:#0B63CE;
+    font-weight:600;
+}
+
+
+
+/* nav incons       */
+
+.nav-icons{
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+}
+.nav-icons span{
+    font-size:22px;
+    cursor:pointer;
+}
+
+.nav-icons img{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    object-fit:cover;
+    
+}
+
+
+
+/*    bread crumb */
+
+.breadcrumb{
+    width:90%;
+    max-width:1400px;
+    margin:30px auto;
+}
+
+.breadcrumb p{
+    color:#666;
+    font-size:15px;
+}
+
+.breadcrumb a {
+    text-decoration:none;
+    color:#0B63CE;
+}
+
+.breadcrumb span{
+    color:#444;
+}
+
+
+
+
+
+
+/*     MAIN LAYOUT            */
+
+.guide-page{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    display:grid;
+    grid-template-columns:280px 1fr; /* make the guide suggest in right side */
+    gap:35px;
+    align-items:start;
+}
+
+
+
+/* FILTER PANNEL  */
+
+.filter-panel{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.08);
+    position:sticky;
+    top:100px;
+
+}
+.filter-panel h2 {
+    color:#123B6D;
+}
+
+.clear-btn{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#0B63CE;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+    margin-bottom:25px;
+    transition:.5s;
+}
+
+.clear-btn:hover{
+    background:#084D9C;
+}
+
+
+/* filter inputs */
+
+.filter-group{
+    display:flex;
+    flex-direction:column; /* adjust and align the filter buttons */
+    margin-bottom:22px;
+}
+
+.filter-group label{
+    margin-bottom:8px;
+    font-weight:500;
+
+}
+
+.filter-group input,
+.filter-group select{
+    padding:12px;
+    border:1px   solid #ddd;
+    border-radius:10px;
+    outline:none;
+    font-size:14px;
+}
+
+.filter-group input:focus,
+.filter-group select:focus{
+    border-color:#0B63CE;
+}
+
+
+
+
+
+
+/* Guide header                          */
+
+.guide-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.guide-header h2{
+    font-size:32px;
+    color:#123B6D;
+}
+.guide-header p{
+    color:#777;
+    font-size:15px;
+}
+
+
+
+
+
+
+
+/*             Guide grid          */
+
+
+
+
+
+
+.guide-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+
+}
+
+/* guide card */
+
+.guide-card{
+    background:#ffffff;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 8px 20px rgba( 0 , 0, 0 .08);
+
+    transition:.5s;}
+
+.guide-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 30px rgba(0,0,0,.15);
+}
+
+
+/* guide image */
+
+.guide-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+/*guide information */
+.guide-info{
+    padding:20px;
+}
+
+
+/*      name and price */
+
+.guide-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:10px;
+    
+}
+.guide-top h3{
+    font-size:20px;
+    color:#123B6D;
+
+}
+
+.guide-top span{  /* money section */
+    background:#EAF4FF;
+    color:#0B63CE;
+    padding:5px 10px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+
+}
+
+
+
+/* rating */
+.rating{
+    color:#F4B400;
+    font-weight:600;
+    margin-bottom:12px;
+
+}
+
+/*descriptio*/
+.guide-info p{
+    color:#666;
+    line-height:1.6;
+    margin-bottom:12px;
+}
+
+/*location */
+.location{
+    color:#777;
+    font-size:14px;
+    margin-bottom:18px;
+
+}
+
+
+/* book button */
+
+.book-btn{
+    width:100%;
+    height:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    background:#0B63CE;
+    color:white;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.5s;
+
+}
+
+.book-btn:hover{
+    background:#084D9C;
+}
