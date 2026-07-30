@@ -104,8 +104,10 @@
 
         <div class="filter-group">
             <label> Destinations </label>
-            <input type="text"
-            placeholder="Where to ?">
+            <input 
+            type="text"
+            id="searchInput"
+            placeholder="Search guide  ">
         </div>
 
 
@@ -169,319 +171,295 @@
 
 
  <!--GUIDE SECTION   -->
- 
  <!-- ======================================================
-                    GUIDE GRID
+                    GUIDE SECTION
 ====================================================== -->
 
-<div class="guide-grid">
+<main class="guide-section">
 
-    <!-- ================= Guide 1 ================= -->
+    <!-- Guide Heading -->
 
-    <div class="guide-card">
+    <div class="guide-header">
 
-        <img src="imgs/guide1.jpg" alt="Tejendra Pariyar">
+        <div>
 
-        <div class="guide-info">
+            <h2>Discover Local Guides</h2>
 
-            <div class="guide-top">
+            <p>Verified professionals ready to guide you.</p>
 
-                <h3>Tejendra Pariyar</h3>
+        </div>
 
-                <span>$100 / Day</span>
+        <span>120 Guides Found</span>
+
+    </div>
+
+
+    <!-- Guide Grid -->
+
+    <div class="guide-grid">
+
+        <!-- ================= Guide 1 ================= -->
+
+        <div class="guide-card"
+        data-name="Tejendra pariyar ">
+
+            <img src="imgs/guide1.jpg" alt="Tejendra Pariyar">
+
+            <div class="guide-info">
+
+                <div class="guide-top">
+
+                    <h3>Tejendra Pariyar</h3>
+
+                    <span>$100 / Day</span>
+
+                </div>
+
+                <p class="rating">⭐ 4.9 (126 Reviews)</p>
+
+                <p>
+                    Experienced cultural guide specializing in
+                    Kathmandu heritage sites and authentic food tours.
+                </p>
+
+                <p class="location">📍 Baneshwor, Kathmandu</p>
+
+                <button class="book-btn">Book Now</button>
 
             </div>
 
-            <p class="rating">
-                ⭐ 4.9 (126 Reviews)
-            </p>
+        </div>
 
-            <p>
-                Experienced cultural guide specializing in
-                Kathmandu heritage sites, local markets,
-                and authentic food tours.
-            </p>
 
-            <p class="location">
-                📍 Baneshwor, Kathmandu
-            </p>
+        <!-- ================= Guide 2 ================= -->
 
-            <button class="book-btn">
-                Book Now
-            </button>
+        <div class="guide-card"
+        data-name="Kaley Vai">
+
+            <img src="imgs/guide2.jpg" alt="Kaley Vai">
+
+            <div class="guide-info">
+
+                <div class="guide-top">
+
+                    <h3>Kaley Vai</h3>
+
+                    <span>$80 / Day</span>
+
+                </div>
+
+                <p class="rating">⭐ 4.8 (98 Reviews)</p>
+
+                <p>
+                    Friendly local guide with deep knowledge
+                    of hiking trails and traditional villages.
+                </p>
+
+                <p class="location">📍 Chhampi, Lalitpur</p>
+
+                <button class="book-btn">Book Now</button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= Guide 3 ================= -->
+
+        <div class="guide-card"
+        data-name="The real OG">
+
+            <img src="imgs/guide3.jpg" alt="The Real OG">
+
+            <div class="guide-info">
+
+                <div class="guide-top">
+
+                    <h3>The Real OG</h3>
+
+                    <span>$150 / Day</span>
+
+                </div>
+
+                <p class="rating">⭐ 5.0 (211 Reviews)</p>
+
+                <p>
+                    Luxury travel expert offering premium city
+                    tours and unforgettable experiences.
+                </p>
+
+                <p class="location">📍 Mustang, Nepal</p>
+
+                <button class="book-btn">Book Now</button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= Guide 4 ================= -->
+
+        <div class="guide-card"
+        data-name="Suvashan Baniya">
+
+            <img src="imgs/guide4.jpg" alt="Suvashan Baniya">
+
+            <div class="guide-info">
+
+                <div class="guide-top">
+
+                    <h3>Suvashan Baniya</h3>
+
+                    <span>$120 / Day</span>
+
+                </div>
+
+                <p class="rating">⭐ 4.9 (165 Reviews)</p>
+
+                <p>
+                    Passionate trekking guide with years of
+                    Himalayan adventure experience.
+                </p>
+
+                <p class="location">📍 Chhampi, Lalitpur</p>
+
+                <button class="book-btn">Book Now</button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= Guide 5 ================= -->
+
+        <div class="guide-card"
+        data-name="Ravi Kishan ">
+
+            <img src="imgs/ravi.jpg" alt="Ravi Kishan">
+
+            <div class="guide-info">
+
+                <div class="guide-top">
+
+                    <h3>Ravi Kishan</h3>
+
+                    <span>$95 / Day</span>
+
+                </div>
+
+                <p class="rating">⭐ 4.7 (184 Reviews)</p>
+
+                <p>
+                    Expert in museums, architecture and
+                    historical walking tours.
+                </p>
+
+                <p class="location">📍 London, UK</p>
+
+                <button class="book-btn">Book Now</button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= Guide 6 ================= -->
+
+        <div class="guide-card"
+        data-name="Tony Soprano ">
+
+            <img src="imgs/tony.jpg" alt="Tony Soprano">
+
+            <div class="guide-info">
+
+                <div class="guide-top">
+
+                    <h3>Tony Soprano</h3>
+
+                    <span>$95 / Day</span>
+
+                </div>
+
+                <p class="rating">⭐ 4.7 (184 Reviews)</p>
+
+                <p>
+                    Excellent knowledge of local culture,
+                    food, and fluent English communication.
+                </p>
+
+                <p class="location">📍 London, UK</p>
+
+                <button class="book-btn">Book Now</button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= Guide 7 ================= -->
+
+        <div class="guide-card"
+        data-name="Salman Khan">
+
+            <img src="imgs/salman.jpg" alt="Salman Khan">
+
+            <div class="guide-info">
+
+                <div class="guide-top">
+
+                    <h3>Salman Khan</h3>
+
+                    <span>$110 / Day</span>
+
+                </div>
+
+                <p class="rating">⭐ 4.9 (143 Reviews)</p>
+
+                <p>
+                    Food and cultural guide specializing
+                    in hidden gems and photography tours.
+                </p>
+
+                <p class="location">📍 Delhi, India</p>
+
+                <button class="book-btn">Book Now</button>
+
+            </div>
 
         </div>
 
     </div>
 
-
-    <!-- ================= Guide 2 ================= -->
-
-    <div class="guide-card">
-
-        <img src="imgs/guide2.jpg" alt="Kaley Vai">
-
-        <div class="guide-info">
-
-            <div class="guide-top">
-
-                <h3>Kaley Vai</h3>
-
-                <span>$80 / Day</span>
-
-            </div>
-
-            <p class="rating">
-                ⭐ 4.8 (98 Reviews)
-            </p>
-
-            <p>
-                Friendly local guide with deep knowledge of
-                hiking trails and traditional villages.
-            </p>
-
-            <p class="location">
-                📍 Chhampi, Lalitpur
-            </p>
-
-            <button class="book-btn">
-                Book Now
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- ================= Guide 3 ================= -->
-
-    <div class="guide-card">
-
-        <img src="imgs/guide3.jpg" alt="The Real OG">
-
-        <div class="guide-info">
-
-            <div class="guide-top">
-
-                <h3>The Real OG</h3>
-
-                <span>$150 / Day</span>
-
-            </div>
-
-            <p class="rating">
-                ⭐ 5.0 (211 Reviews)
-            </p>
-
-            <p>
-                Luxury travel expert offering premium city
-                tours and unforgettable local experiences.
-            </p>
-
-            <p class="location">
-                📍 Mustang, Nepal
-            </p>
-
-            <button class="book-btn">
-                Book Now
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- ================= Guide 4 ================= -->
-
-    <div class="guide-card">
-
-        <img src="imgs/guide4.jpg" alt="Suvashan Baniya">
-
-        <div class="guide-info">
-
-            <div class="guide-top">
-
-                <h3>Suvashan Baniya</h3>
-
-                <span>$120 / Day</span>
-
-            </div>
-
-            <p class="rating">
-                ⭐ 4.9 (165 Reviews)
-            </p>
-
-            <p>
-                Passionate trekking guide with experience
-                leading Himalayan and adventure tours.
-            </p>
-
-            <p class="location">
-                📍 Chhampi, Lalitpur
-            </p>
-
-            <button class="book-btn">
-                Book Now
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- ================= Guide 5 ================= -->
-
-    <div class="guide-card">
-
-        <img src="imgs/ravi.jpg" alt="Sarah Jenkins">
-
-        <div class="guide-info">
-
-            <div class="guide-top">
-
-                <h3>Ravi Kishan </h3>
-
-                <span>$95 / Day</span>
-
-            </div>
-
-            <p class="rating">
-                ⭐ 4.7 (184 Reviews)
-            </p>
-
-            <p>
-                English-speaking guide specializing in
-                museums, architecture, and walking tours.
-            </p>
-
-            <p class="location">
-                📍 London, UK
-            </p>
-
-            <button class="book-btn">
-                Book Now
-            </button>
-
-        </div>
-
-    </div>
-
-
-
-
-    
-    <div class="guide-card">
-
-        <img src="imgs/tony.jpg" alt="Sarah Jenkins">
-
-        <div class="guide-info">
-
-            <div class="guide-top">
-
-                <h3>Tony Soprano </h3>
-
-                <span>$95 / Day</span>
-
-            </div>
-
-            <p class="rating">
-                ⭐ 4.7 (184 Reviews)
-            </p>
-
-            <p>
-               Very Good Knowldege of Local area and have a fluent english 
-            </p>
-
-            <p class="location">
-                📍 London, UK
-            </p>
-
-            <button class="book-btn">
-                Book Now
-            </button>
-
-        </div>
-
-    </div>
-
-
-    <!-- ================= Guide 6 ================= -->
-
-    <div class="guide-card">
-
-        <img src="imgs/salman.jpg" alt="Mei Ling">
-
-        <div class="guide-info">
-
-            <div class="guide-top">
-
-                <h3>Salman khan</h3>
-
-                <span>$110 / Day</span>
-
-            </div>
-
-            <p class="rating">
-                ⭐ 4.9 (143 Reviews)
-            </p>
-
-            <p>
-                Food and cultural guide with expertise in
-                hidden gems, local cuisine, and photography.
-            </p>
-
-            <p class="location">
-                📍 Delhi, India 
-            </p>
-
-            <button class="book-btn">
-                Book Now
-            </button>
-
-        </div>
-
-    </div>
-
-</div>
-    <!-- pagnation -->
-
-
-    <div class="pagination">
-        <button class="page-btn">
-             ◀
-        </button>
-
-        <button class="page-btn active ">
-            1
-
-        </button>
-         <button class="page-btn ">
-            2
-
-        </button>
-         <button class="page-btn  ">
-            3
-
-        </button>
-         <button class="page-btn  ">
-            4
-
-        </button>
-         <button class="page-btn active ">
-            ▶
-
-        </button>
-
-
-    </div>
 </main>
 
 </section>
+
+
+
+<!-- paginatio -->
+<div class="pagination">
+
+    <button class="page-btn">◀</button>
+
+    <button class="page-btn active">1</button>
+
+    <button class="page-btn">2</button>
+
+    <button class="page-btn">3</button>
+
+    <button class="page-btn">4</button>
+
+    <button class="page-btn">▶</button>
+
+</div>
 
 <!--footer -->
 <footer class="footer">
     <p>  © 2026 Guide Mate. All Rights Reserved.</p>
 </footer>
+
+<!-- JavaScript -->
+<script src="js/find-guides.js"></script>
 
 </body>
 </html>

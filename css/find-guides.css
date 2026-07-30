@@ -135,7 +135,7 @@ nav ul li a:hover{
 
 /* FILTER PANNEL  */
 
-.filter-panel{
+.filter-pannel{
     background:white;
     padding:25px;
     border-radius:15px;
@@ -174,17 +174,21 @@ nav ul li a:hover{
 }
 
 .filter-group label{
+    display:block;
     margin-bottom:8px;
     font-weight:500;
+    color:#123B6D
 
 }
 
 .filter-group input,
 .filter-group select{
+    width:100%;
     padding:12px;
     border:1px   solid #ddd;
     border-radius:10px;
     outline:none;
+    transition:.3s;
     font-size:14px;
 }
 
@@ -336,4 +340,110 @@ nav ul li a:hover{
 
 .book-btn:hover{
     background:#084D9C;
+}
+
+
+
+/* pagination  */
+
+.pagination{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    margin:60px auto ;
+}
+
+/*page button*/
+.page-btn{
+    width:45px;
+    height:45px;
+    border:none;
+    border-radius:10px;
+    background:#ffffff;
+    color:#123B6D;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,.08);
+    transition:.4s;
+}
+
+.page-btn:hover{
+    background:#0B63CE;
+    color:white;
+}
+
+.page-btn.active{
+    background:#0B63CE;
+    color:white;
+}
+
+
+/* footer   */
+.footer{
+    background:#123B6D;
+    color:white;
+
+    margin-top:70px;
+    padding:30px 0 ;
+    
+    
+}
+
+.footer p {
+    text-align:center;
+    font-size:15px;
+}
+
+
+/* tablet */
+
+@media(max-width:992px){
+    .guide-page{
+        grid-template-columns:1fr;
+
+    }
+    .filter-panel{
+        position:static;
+    }
+
+    .guide-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+}
+
+
+/* modbile card
+
+*/
+
+@media(max-width:768px){
+    .navbar{
+        flex-direction:column;
+        height:auto;
+        padding:20px;
+        gap:20px;
+    }
+
+    nav ul {
+         flex-wrap:wrap;
+         justify-content:center;
+
+    }
+    .guide-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:10px;
+
+    }
+
+    .guide-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+.html{
+    scroll-behavior:smooth;
 }
