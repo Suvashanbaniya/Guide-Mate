@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Booking Payment | Guide Mate</title>
+
+    <!-- Google Font -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/payment.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+
+    
+
+<header class="navbar">
+    <!--logo -->
+    <div class="logo">
+        <img src="img/logoo.png"
+        alt="Guide Mate Logo">
+        <h2> Guide Mate </h2>
+    </div>
+
+
+    <!-- Navigation link -->
+
+    <nav>
+        <ul>
+            <li>
+                <a href="home.html">Home </a>
+            </li>
+
+            <li> 
+                <a href="find-guides.html"
+                class="active">Find Guides</a>
+            </li>
+            <li> <a href="#">Destnations </a></li>
+            <li> <a href="#"> Bookings </a></li>
+            <li> <a href="#"> Messages </a></li>
+            <li> <a href="#"> Reviews </a></li>
+        </ul>
+    </nav>
+
+
+
+    <!-- users icons -->
+
+
+
+    <!-- Paste your existing navbar here -->
+
+
+    <section class="payment-page">
+
+        <div class="container">
+
+            <!-- Breadcrumb -->
+
+            <div class="breadcrumb">
+
+                <a href="#">Home</a>
+
+                <span>/</span>
+
+                <a href="#">Bookings</a>
+
+                <span>/</span>
+
+                <p>Payment</p>
+
+            </div>
+
+            <!-- Heading -->
+
+            <div class="page-title">
+
+                <h1>Secure Payment</h1>
+
+            </div>
+
+            <!-- Payment Content -->
+
+            <div class="payment-container">
+
+                <!-- Left Side -->
+
+                <div class="payment-left">
+
+                    <div class="payment-card">
+
+                        <h2>Choose Payment Method</h2>
+
+                        <div class="payment-methods">
+
+                            <button class="method active">
+
+                                <i class="fa-regular fa-credit-card"></i>
+
+                                <span>Credit Card</span>
+
+                            </button>
+
+                            <button class="method">
+
+                                <i class="fa-solid fa-building-columns"></i>
+
+                                <span>Debit Card</span>
+
+                            </button>
+
+                            <button class="method">
+
+                                <i class="fa-solid fa-wallet"></i>
+
+                                <span>Digital Wallet</span>
+
+                            </button>
+
+                            <button class="method">
+
+                                <i class="fa-solid fa-money-bill-wave"></i>
+
+                                <span>Cash</span>
+
+                            </button>
+
+                        </div>
+
+
+
+                        <form class="payment-form">
+
+                            <div class="input-group">
+
+                                <label>Cardholder Name</label>
+
+                                <input type="text" placeholder="John Doe">
+
+                            </div>
+
+                            <div class="input-group">
+
+                                <label>Card Number</label>
+
+                                <div class="input-icon">
+
+                                    <input type="text" placeholder="0000 0000 0000 0000">
+
+                                    <i class="fa-regular fa-credit-card"></i>
+
+                                </div>
+
+                            </div>
+
+                            <div class="row">
+
+                                <div class="input-group">
+
+                                    <label>Expiry Date</label>
+
+                                    <input type="text" placeholder="MM/YY">
+
+                                </div>
+
+                                <div class="input-group">
+
+                                    <label>CVV</label>
+
+                                    <input type="password" placeholder="123">
+
+                                </div>
+
+                            </div>
+
+                            <div class="save-card">
+
+                                <input type="checkbox" id="save-card">
+
+                                <label for="save-card">
+                                    Save card details for future bookings
+                                </label>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                    <div class="security-box">
+
+                        <i class="fa-solid fa-shield-halved"></i>
+
+                        <p>
+                            Your transaction is encrypted and secured by
+                            industry-standard SSL technology.
+                        </p>
+
+                    </div>
+
+                </div>
+            
+                
+                <!-- Right Side -->
+
+                <div class="payment-right">
+
+                    <div class="summary-card">
+
+                        <h2>Booking Summary</h2>
+
+                        <div class="tour-info">
+
+                            <img src="images/destination-1.jpg" alt="Tour">
+
+                            <div class="tour-details">
+
+                                <h3>Imperial Heritage Walk</h3>
+
+                                <p>Kyoto, Japan</p>
+
+                                <div class="rating">
+
+                                    <i class="fa-solid fa-star"></i>
+
+                                    <span>4.9 (124 reviews)</span>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="summary-list">
+
+                            <div class="summary-item">
+
+                                <span>Date</span>
+
+                                <strong>Oct 24, 2024</strong>
+
+                            </div>
+
+                            <div class="summary-item">
+
+                                <span>Guests</span>
+
+                                <strong>2 Adults</strong>
+
+                            </div>
+
+                            <div class="summary-item">
+
+                                <span>Tour Duration</span>
+
+                                <strong>4 Hours</strong>
+
+                            </div>
+
+                        </div>
+
+                        <div class="price-details">
+
+                            <div class="price-item">
+
+                                <span>Subtotal</span>
+
+                                <span>$180.00</span>
+
+                            </div>
+
+                            <div class="price-item">
+
+                                <span>Service Fee</span>
+
+                                <span>$12.50</span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="total-price">
+
+                            <h3>Total Amount</h3>
+
+                            <h2>$192.50</h2>
+
+                        </div>
+
+                        <button class="pay-btn">
+
+                            Pay Now
+
+                            <i class="fa-solid fa-lock"></i>
+
+                        </button>
+
+                        <p class="terms">
+
+                            By clicking "Pay Now", you agree to our
+                            Terms of Service.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    
+
+
+    </section>
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="footer-left">
+
+            <h3>Guide Mate</h3>
+
+            <p>© 2024 Guide Mate. All rights reserved.</p>
+
+        </div>
+
+        <div class="footer-right">
+
+            <a href="#">Privacy Policy</a>
+
+            <a href="#">Terms of Service</a>
+
+            <a href="#">Help Center</a>
+
+            <a href="#">Contact Us</a>
+
+        </div>
+
+    </footer>
+
+    <script src="payment.js"></script>
+
+</body>
+
+</html>
+
+
