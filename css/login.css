@@ -2,18 +2,18 @@
     margin:0;
     padding:0;
     box-sizing:border-box;
-    font-family:Arial,sans-serif;
+    font-family:'Poppins', 'Segoe UI', Arial, sans-serif;
 }
-
 
 body{
     background:#f4f6fb;
     display:flex;
     justify-content:center;
     align-items:center;
-    height:100vh;
-
+    min-height:100vh;
+    padding:20px;
 }
+
 /*  main card */
 
 .login-container{
@@ -48,10 +48,16 @@ body{
 
 }
 
+.left-panel h1,
+.left-panel h2,
+.right-panel h2 {
+    font-family:'Poppins', 'Segoe UI', Arial, sans-serif;
+}
+
 .left-panel p{
     margin-top:20px;
     line-height:1.6;
-
+    font-family:'Inter', 'Segoe UI', Arial, sans-serif;
 }
 
 /*right side */
@@ -117,22 +123,43 @@ input{
 }
 /* divider */
 .divider{
-    text-align:center ;/* to continue with part */
-    margin :10px 0 20 px;
+    text-align:center;
+    margin:20px 0;
     color:#777;
 }
 
 .social{
-    display:flex; /* for google and facebook */
-    gap:30px;
-
+    display:flex;
+    gap:15px;
 }
-.social button{
+
+.social-btn{
     flex:1;
-    padding : 1px solid #ccc;
-    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    padding:12px 10px;
+    border:1px solid #d9e2f0;
+    border-radius:12px;
     background:white;
     cursor:pointer;
+    font-weight:600;
+    color:#333;
+    transition:all 0.2s ease;
+    box-shadow:0 2px 6px rgba(0,0,0,0.04);
+}
+
+.social-btn svg{
+    width:20px;
+    height:20px;
+    flex-shrink:0;
+}
+
+.social-btn:hover{
+    transform:translateY(-1px);
+    box-shadow:0 4px 10px rgba(0,0,0,0.08);
+    background:#f8fbff;
 }
 
 

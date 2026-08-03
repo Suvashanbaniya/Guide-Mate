@@ -17,6 +17,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
           rel="stylesheet">
 
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
           <!-- for css -->
             <link rel="stylesheet" href="css/home.css">
 
@@ -26,63 +30,51 @@
 </head>
 <body>
     <header class="navbar">
-        <!-- left side for logo and brand name -->
-
         <div class="logo">
-            <img src="img/logoo.png"
-            alt="Guide Mate Logo">
-            <h2> Guide Mate </h2>
+            <img src="img/logoo.png" alt="Guide Mate Logo">
+            <h2>Guide Mate</h2>
         </div>
- <nav>
-    <ul>
-        <li><a href="#" class="active"> Home</a></li>
-        <li> <a href="find-guides.html" >Find  Guides  </a></li>
-        <li> <a href="#" >Chat Guide </a></li>
-        <li> <a href="#"> Destinations</a></li>
-        <li> <a href="#"> Bookings</a></li>
-        <li> <a href="#"> Messages</a></li>
-        <li> <a href="#"> Review</a></li>
-        
-        
-        
-    </ul>
- </nav>
 
- <!-- user icnons-->
-  <div class="nav-icons">
-    <span>🔔</span>
-    <img src="img/profile.jpg"
-    alt="profile">
-  </div>
+        <nav>
+            <ul>
+                <li><a href="home.html" class="active">Home</a></li>
+                <li><a href="find-guides.html">Find Guides</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="payment.html">Bookings</a></li>
+                <li><a href="chat.html">Messages</a></li>
+                <li><a href="reviewpage.html">Reviews</a></li>
+            </ul>
+        </nav>
 
+        <div class="nav-icons">
+            <i class="fa-regular fa-bell"></i>
+            <img src="img/profile.jpg" alt="profile" style="cursor:pointer;" onclick="window.location.href='profile.html';">
+        </div>
     </header>
 
-
-    <!-- hero sectuion -->
-     <section class = "hero">
+    <section class="hero">
+        <div class="hero-image">
+            <img src="dimg/sky.jpg" alt="Hero Background" class="hero-photo">
+        </div>
         <div class="overlay">
             <h1>
-                 Welcome back , Suvashan .
+                 Welcome back, Suvashan.
                  <br>
-                 Your  next adventure awaits 
+                 Your next adventure awaits
             </h1>
             <p>
                 Discover hidden gems and connect with local 
-                Guides around the world 
+                guides around the world
             </p>
-            <!-- search boc-->
+            <!-- search box-->
              <div class="search-box">
-
                 <input
                     type="text"
                     placeholder="Search destinations...">
-
                 <button>
-                     Search 
-                     </button>
-
-
-                  </div>
+                     Search
+                </button>
+              </div>
             
             </div>
 
@@ -409,7 +401,7 @@
         <div class="nearby-list">
 
             <div class="nearby-card">
-                <span>🏛️</span>
+                <img src="dimg/pashupatinath.jpg" alt="Pashupatinath Temple" class="nearby-icon">
                 <div>
                     <h4>Pashupatinath Temple</h4>
                     <p>2.5 km away</p>
@@ -417,7 +409,7 @@
             </div>
 
             <div class="nearby-card">
-                <span>🌄</span>
+                <img src="dimg/swayambunath.webp" alt="Swayambhunath" class="nearby-icon">
                 <div>
                     <h4>Swayambhunath</h4>
                     <p>4 km away</p>
@@ -425,7 +417,7 @@
             </div>
 
             <div class="nearby-card">
-                <span>🏞️</span>
+                <img src="dimg/garden.jpg" alt="Garden of Dreams" class="nearby-icon">
                 <div>
                     <h4>Garden of Dreams</h4>
                     <p>1.8 km away</p>
@@ -433,7 +425,7 @@
             </div>
 
             <div class="nearby-card">
-                <span>🛕</span>
+                <img src="dimg/boudhanathstupa.jpg" alt="Boudhanath Stupa" class="nearby-icon">
                 <div>
                     <h4>Boudhanath Stupa</h4>
                     <p>6 km away</p>
@@ -445,84 +437,67 @@
     </div>
 
 </section>
-<!-- ======================================================
+<!-- 
                         FOOTER
-====================================================== -->
+ -->
 
 <footer class="footer">
 
     <div class="footer-container">
 
-        <!-- Company Information -->
-        <div class="footer-about">
+        <div class="footer-logo">
 
-            <div class="footer-logo">
+            <img src="img/logoo.png" alt="Guide Mate">
 
-                <img src="img/logoo.png" alt="Guide Mate Logo">
-
-                <h2>Guide Mate</h2>
-
-            </div>
+            <h2>Guide Mate</h2>
 
             <p>
-                Guide Mate connects travelers with trusted local
-                guides, making every journey safe, enjoyable,
-                and unforgettable.
+                Connecting travelers with trusted local guides around the world.
             </p>
 
         </div>
 
-
-        <!-- Quick Links -->
         <div class="footer-links">
 
-            <h3>Quick Links</h3>
+            <h4>Quick Links</h4>
 
-            <ul>
+            <a href="home.html">Home</a>
 
-                <li><a href="#">Home</a></li>
+            <a href="find-guides.html">Find Guides</a>
 
-                <li><a href="#">Destinations</a></li>
+            <a href="destination.html">Destinations</a>
 
-                <li><a href="#">Guides</a></li>
-
-                <li><a href="#">Bookings</a></li>
-
-                <li><a href="#">Reviews</a></li>
-
-            </ul>
+            <a href="payment.html">Bookings</a>
 
         </div>
 
+        <div class="footer-links">
 
-        <!-- Contact -->
-        <div class="footer-contact">
+            <h4>Support</h4>
 
-            <h3>Contact</h3>
+            <a href="#">Help Center</a>
 
-            <p>📍 Lalitpur, Nepal</p>
+            <a href="#">Privacy Policy</a>
 
-            <p>📞 +977 98XXXXXXXX</p>
+            <a href="#">Terms & Conditions</a>
 
-            <p>✉️ support@guidemate.com</p>
+            <a href="#">Contact Us</a>
 
         </div>
 
-
-        <!-- Social Media -->
         <div class="footer-social">
 
-            <h3>Follow Us</h3>
+            <h4>Follow Us</h4>
 
             <div class="social-icons">
 
-                <a href="#">🌐</a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
 
-                <a href="#">📘</a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
 
-                <a href="#">📷</a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
 
-                <a href="#">▶️</a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
 
             </div>
 
@@ -530,14 +505,10 @@
 
     </div>
 
-    <!-- Bottom Footer -->
-
     <div class="footer-bottom">
 
         <p>
-
             © 2026 Guide Mate. All Rights Reserved.
-
         </p>
 
     </div>
