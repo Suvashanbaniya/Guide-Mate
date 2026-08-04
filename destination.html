@@ -36,11 +36,17 @@
                 <li><a href="chat.html">Messages</a></li>
                 <li><a href="reviewpage.html">Reviews</a></li>
             </ul>
+<!-- Navigation Icons -->
 
-            <div class="nav-right">
-                <i class="fa-regular fa-bell"></i>
-                <img src="imgs/guide1.jpg" alt="Profile" style="cursor:pointer;" onclick="window.location.href='profile.html';">
-            </div>
+<div class="nav-right">
+
+    <i class="fa-regular fa-bell"></i>
+
+    <img src="imgs/guide1.jpg"
+         alt="Profile"
+         id="profilePic">
+
+</div>
         </nav>
     </header>
 
@@ -55,9 +61,13 @@
 
                 <i class="fa-solid fa-magnifying-glass"></i>
 
-                <input type="text" placeholder="Where do you want to go?">
+                <input type="text" 
+                id="searchInput"
+                placeholder="Where do you want to go?">
 
-                <button>Search</button>
+                <button
+                    id="searchBtn" >
+                    Search</button>
 
             </div>
 
@@ -458,7 +468,7 @@
 
 
 
-<script src="destination.js"></script>
+<script src="js/destination.js"></script>
 
 
 </body>

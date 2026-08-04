@@ -58,10 +58,17 @@
 
         </ul>
 
-        <div class="profile">
-            <i class="fa-regular fa-bell"></i>
-            <img src="imgs/guide2.jpg" alt="Profile" style="cursor:pointer;" onclick="window.location.href='profile.html';">
-        </div>
+        <div class="nav-icons">
+
+    <i class="fa-regular fa-bell notification"></i>
+
+    <div class="profile">
+
+        <img src="imgs/guide2.jpg" alt="Profile" id="profilePic">
+
+    </div>
+
+</div>
 
     </nav>
 
@@ -213,7 +220,9 @@
 
                 <label>Review Details</label>
 
-                <textarea placeholder="Tell us about your guide and the destination..."></textarea>
+                <textarea  id = "reviewText" placeholder="Tell us about your guide and the destination..."></textarea>
+                
+
 
                 <label>Add Photos (Optional)</label>
 
@@ -225,7 +234,11 @@
 
                 </div>
 
-                <button class="post-btn">Post Review</button>
+<button class="post-btn" id="postReview">
+    Post Review
+</button>
+<!--for the js -->
+
 
             </div>
 
@@ -471,7 +484,7 @@
 
 </footer>
 
-<script src="review.js"></script>
+<script src="js/review.js"></script>
 
 </body>
 </html>
