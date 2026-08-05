@@ -12,19 +12,19 @@ body{
     align-items:center;
     min-height:100vh;
     padding:20px;
+     overflow-y:auto;
 }
 
 /*  main card */
-
 .login-container{
     width:1000px;
-    height:600px;
+    height:auto;
+    min-height:650px;
     display:flex;
     background:white;
     border-radius:15px;
     overflow:hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0.15);
-
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
 }
 
 /* left side */
@@ -92,6 +92,52 @@ body{
 
 }
 
+
+
+
+
+
+
+
+
+
+
+/*this is for tab link */
+/* Login & Sign Up Tabs */
+
+.tabs{
+    display:flex;
+    width:100%;
+    background:#F5F7FA;
+    border-radius:12px;
+    padding:5px;
+    margin-bottom:30px;
+    gap:5px;
+}
+
+.tab{
+    flex:1;
+    text-align:center;
+    text-decoration:none;
+    padding:12px 0;
+    border-radius:10px;
+    color:#666;
+    font-size:16px;
+    font-weight:600;
+    background:transparent;
+    transition:.3s;
+}
+
+.tab:hover{
+    color:#0B63CE;
+}
+
+.tab.active{
+    background:#0B63CE;
+    color:#fff;
+}
+
+
 /* this is form main part */
 form {
     margin-top:30px;/* for spacing*/
@@ -150,10 +196,17 @@ input{
     box-shadow:0 2px 6px rgba(0,0,0,0.04);
 }
 
-.social-btn svg{
-    width:20px;
-    height:20px;
-    flex-shrink:0;
+.social-btn i{
+    font-size:20px;
+    margin-right:10px;
+}
+
+.google-btn i{
+    color:#37db5b;
+}
+
+.facebook-btn i{
+    color:#1877F2;
 }
 
 .social-btn:hover{

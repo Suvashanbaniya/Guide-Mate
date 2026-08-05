@@ -162,6 +162,9 @@ nav ul li a:hover {
 }
 
 .menu-item {
+    display:flex;
+    align-items:center;
+    gap:12px;
     background: white;
     border: none;
     padding: 12px 15px;
@@ -174,6 +177,14 @@ nav ul li a:hover {
     transition: all 0.2s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
+
+
+.menu-item i{
+    width:20px;
+    font-size:18px;
+    color:#0B63CE;
+}
+
 
 .menu-item:hover {
     background: #f0f4ff;

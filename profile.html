@@ -46,25 +46,33 @@
         <!-- Left Sidebar -->
         <aside class="sidebar">
             <div class="profile-card">
-                <img src="img/profile.jpg" alt="Alex Thompson" class="profile-image">
+                <img src="img/profile.jpg" alt="suvashan Baniya " class="profile-image">
                 <h3>Suvashan Baniya </h3>
                 <p class="role">Professional Explorer</p>
             </div>
 
-            <nav class="sidebar-menu">
-                <button class="menu-item active">
-                    <span>✏️</span> Edit Profile
-                </button>
-                <button class="menu-item">
-                    <span>🔒</span> Change Password
-                </button>
-                <button class="menu-item">
-                    <span>⚙️</span> Notification Settings
-                </button>
-                <button class="menu-item">
-                    <span>🌐</span> Language Settings
-                </button>
-            </nav>
+
+<nav class="sidebar-menu">
+    <button class="menu-item active">
+        <i class="fa-solid fa-user-pen"></i>
+        <span>Edit Profile</span>
+    </button>
+
+    <button class="menu-item">
+        <i class="fa-solid fa-lock"></i>
+        <span>Change Password</span>
+    </button>
+
+    <button class="menu-item">
+        <i class="fa-solid fa-bell"></i>
+        <span>Notification Settings</span>
+    </button>
+
+    <button class="menu-item">
+        <i class="fa-solid fa-language"></i>
+        <span>Language Settings</span>
+    </button>
+</nav>
 
             <div class="level-card">
                 <h4>Explore Level</h4>
@@ -72,9 +80,13 @@
                 <p class="level-info">290 points to Platinum</p>
             </div>
 
-            <button class="logout-btn" onclick="window.location.href='login.html';">
-                <span>🚪</span> Logout
-            </button>
+
+<button class="logout-btn" id="logoutBtn">
+    <i class="fa-solid fa-right-from-bracket"></i>
+    <span>Logout</span>
+</button>
+
+
         </aside>
 
         <!-- Right Content Area -->
@@ -216,20 +228,22 @@
 
             <!-- Social Media -->
             <div class="footer-social">
-                <h3>Follow Us</h3>
-                <div class="social-icons">
-                    <a href="#">🌐</a>
-                    <a href="#">📘</a>
-                    <a href="#">📷</a>
-                    <a href="#">▶️</a>
-                </div>
-            </div>
+    <h3>Follow Us</h3>
+    <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+    </div>
+</div>
         </div>
 
         <!-- Bottom Footer -->
         <div class="footer-bottom">
             <p>© 2026 Guide Mate. All Rights Reserved.</p>
         </div>
+<script src="js/profile.js"></script>
+
     </footer>
 </body>
 </html>

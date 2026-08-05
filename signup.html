@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign Up | Guide Mate</title>
+
+  <!-- Google Font: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Page Styles -->
+  <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+
+  <div class="signup-wrapper">
+
+    <!-- Top Logo -->
+
+    <div class="page-logo">
+
+        <img src="img/logoo.png"
+             alt="Guide Mate Logo">
+
+        <h1>Guide Mate</h1>
+
+    </div>
+
+    <!-- Signup Card -->
+
+    <div class="signup-card">
+
+        <div class="signup-header">
+
+            <h2 class="signup-title">
+                Create Account
+            </h2>
+
+            <p class="signup-subtitle">
+                Join Guide Mate and start exploring with trusted local guides.
+            </p>
+
+        </div>
+      <!-- Signup Form -->
+      <form id="signupForm" class="signup-form" novalidate>
+
+        <!-- Full Name -->
+        <div class="input-group">
+          <label for="fullName">Full Name</label>
+          <div class="input-field">
+            <i class="fa-solid fa-user"></i>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- Email Address -->
+        <div class="input-group">
+          <label for="email">Email Address</label>
+          <div class="input-field">
+            <i class="fa-solid fa-envelope"></i>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email address"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- Phone Number -->
+        <div class="input-group">
+          <label for="phone">Phone Number</label>
+          <div class="input-field">
+            <i class="fa-solid fa-phone"></i>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Enter your phone number"
+              pattern="[0-9+\-\s]{7,15}"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- Password -->
+        <div class="input-group">
+          <label for="password">Password</label>
+          <div class="input-field">
+            <i class="fa-solid fa-lock"></i>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              placeholder="Create a password"
+              minlength="8"
+              required
+            />
+            <i class="fa-solid fa-eye toggle-password" data-target="password"></i>
+          </div>
+        </div>
+
+        <!-- Confirm Password -->
+        <div class="input-group">
+          <label for="confirmPassword">Confirm Password</label>
+          <div class="input-field">
+            <i class="fa-solid fa-lock"></i>
+            <input
+              type="password"
+              id="confirmPassword"
+              name="confirmPassword"
+              placeholder="Re-enter your password"
+              minlength="8"
+              required
+            />
+            <i class="fa-solid fa-eye toggle-password" data-target="confirmPassword"></i>
+          </div>
+        </div>
+
+        <!-- Account Type -->
+        <div class="input-group">
+          <label><i class="fa-solid fa-user-group"></i> Account Type</label>
+          <div class="account-type-options">
+
+            <!-- Tourist Option -->
+            <input type="radio" id="tourist" name="accountType" value="tourist" class="account-type-input" checked>
+            <label for="tourist" class="account-type-card">
+              <i class="fa-solid fa-suitcase-rolling"></i>
+              <span class="account-type-name">Tourist</span>
+              <span class="account-type-desc">I want to explore with guides</span>
+            </label>
+
+            <!-- Guide Option -->
+            <input type="radio" id="guide" name="accountType" value="guide" class="account-type-input">
+            <label for="guide" class="account-type-card">
+              <i class="fa-solid fa-person-hiking"></i>
+              <span class="account-type-name">Guide</span>
+              <span class="account-type-desc">I want to offer local tours</span>
+            </label>
+
+          </div>
+        </div>
+
+        <!-- Terms & Conditions -->
+        <div class="terms-group">
+          <input type="checkbox" id="terms" name="terms" required>
+          <label for="terms">I agree to the <a href="#">Terms &amp; Conditions</a>.</label>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn-primary">Create Account</button>
+
+        <!-- Sign In Redirect -->
+        <p class="signin-text">
+          Already have an account? <a href="login.html" class="signin-link">Sign In</a>
+        </p>
+
+      </form>
+
+    </div>
+  </div>
+
+  <!-- Page Script -->
+  <script src="signup.js"></script>
+</body>
+</html>

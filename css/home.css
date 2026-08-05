@@ -34,6 +34,11 @@ img{
     z-index:1000;
 }
 
+
+.profile-img{
+    cursor:pointer;
+}
+
 .logo{
     display:flex;;
     align-items:center;

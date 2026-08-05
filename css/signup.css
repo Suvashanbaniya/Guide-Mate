@@ -1,0 +1,417 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F5F7FA;
+  color: #333333;
+  line-height: 1.5;
+}
+
+/* Page Wrapper */
+.signup-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Signup Card */
+.signup-card {
+  width: 100%;
+  max-width: 560px;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(11, 59, 109, 0.08);
+  padding: 48px 40px;
+}
+
+/* Header Section */
+.signup-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  color: #0B63CE;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.logo i {
+  font-size: 24px;
+}
+
+.signup-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #123B6D;
+  margin-bottom: 8px;
+}
+
+.signup-subtitle {
+  font-size: 14px;
+  color: #6B7280;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+
+
+
+/* Page */
+
+.signup-wrapper{
+    min-height:100vh;
+    background:#F5F7FA;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    padding:50px 20px;
+}
+
+/* Logo */
+
+.page-logo{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.page-logo img{
+    width:90px;
+    margin-bottom:10px;
+}
+
+.page-logo h1{
+    font-size:34px;
+    color:#123B6D;
+    font-weight:700;
+}
+
+/* Card */
+
+.signup-card{
+    width:100%;
+    max-width:560px;
+    background:#fff;
+    border-radius:18px;
+    padding:40px;
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+}
+
+
+
+
+
+
+
+
+
+.btn-primary{
+    width:100%;
+    padding:14px;
+    background:#0B63CE;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn-primary:hover{
+    background:#084D9C;
+}
+
+
+
+
+
+.signin-text{
+    margin-top:25px;
+    text-align:center;
+}
+
+.signin-link{
+    color:#0B63CE;
+    font-weight:600;
+    text-decoration:none;
+}
+
+.signin-link:hover{
+    text-decoration:underline;
+}
+
+
+
+
+
+
+
+/* Form */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input Group */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.input-group label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #123B6D;
+}
+
+/* Input Field with Icon */
+.input-field {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-field i {
+  position: absolute;
+  left: 16px;
+  color: #9CA3AF;
+  font-size: 15px;
+}
+
+.input-field input {
+  width: 100%;
+  padding: 13px 16px 13px 44px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  color: #333333;
+  background-color: #F5F7FA;
+  border: 1.5px solid #E5E9EF;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.input-field input::placeholder {
+  color: #9CA3AF;
+}
+
+.input-field input:focus {
+  border-color: #0B63CE;
+  box-shadow: 0 0 0 3px rgba(11, 99, 206, 0.12);
+  background-color: #FFFFFF;
+}
+
+/* Password Toggle Icon */
+.toggle-password {
+  position: absolute;
+  right: 16px;
+  left: auto;
+  cursor: pointer;
+  color: #9CA3AF;
+  transition: color 0.2s ease;
+}
+
+.toggle-password:hover {
+  color: #0B63CE;
+}
+
+/* Account Type Selection */
+.account-type-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 4px;
+}
+
+/* Hide the default radio input */
+.account-type-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Selectable Card Style */
+.account-type-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 6px;
+  padding: 20px 12px;
+  border: 1.5px solid #E5E9EF;
+  border-radius: 12px;
+  background-color: #F5F7FA;
+  cursor: pointer;
+  transition: border-color 0.25s ease, background-color 0.25s ease, transform 0.2s ease;
+}
+
+.account-type-card i {
+  font-size: 22px;
+  color: #0B63CE;
+  margin-bottom: 4px;
+}
+
+.account-type-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #123B6D;
+}
+
+.account-type-desc {
+  font-size: 12px;
+  color: #6B7280;
+}
+
+.account-type-card:hover {
+  transform: translateY(-2px);
+  border-color: #0B63CE;
+}
+
+/* Selected State */
+.account-type-input:checked + .account-type-card {
+  border-color: #0B63CE;
+  background-color: #EAF2FE;
+  box-shadow: 0 0 0 3px rgba(11, 99, 206, 0.12);
+}
+
+/* Focus visibility for keyboard users */
+.account-type-input:focus-visible + .account-type-card {
+  outline: 2px solid #0B63CE;
+  outline-offset: 2px;
+}
+
+/* Terms & Conditions */
+.terms-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  color: #6B7280;
+}
+
+.terms-group input[type="checkbox"] {
+  margin-top: 3px;
+  width: 16px;
+  height: 16px;
+  accent-color: #0B63CE;
+  cursor: pointer;
+}
+
+.terms-group a {
+  color: #0B63CE;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.terms-group a:hover {
+  text-decoration: underline;
+}
+
+/* Primary Button */
+.btn-primary {
+  width: 100%;
+  padding: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #0B63CE;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.25s ease, transform 0.2s ease;
+  margin-top: 4px;
+}
+
+.btn-primary:hover {
+  background-color: #123B6D;
+  transform: translateY(-1px);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+/* Sign In Redirect Text */
+.signin-text {
+  text-align: center;
+  font-size: 14px;
+  color: #6B7280;
+  margin-top: 4px;
+}
+
+.signin-link {
+  color: #0B63CE;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.signin-link:hover {
+  color: #123B6D;
+  text-decoration: underline;
+}
+
+/* Tablet Responsive */
+@media (max-width: 768px) {
+  .signup-card {
+    max-width: 90%;
+    padding: 36px 28px;
+  }
+
+  .account-type-options {
+    gap: 12px;
+  }
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+  .signup-card {
+    width: 90%;
+    padding: 28px 20px;
+    border-radius: 14px;
+  }
+
+  .signup-title {
+    font-size: 24px;
+  }
+
+  .signup-subtitle {
+    font-size: 13px;
+  }
+
+  .account-type-options {
+    grid-template-columns: 1fr;
+  }
+
+  .account-type-card {
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 12px;
+    padding: 14px 16px;
+  }
+
+  .account-type-card i {
+    margin-bottom: 0;
+  }
+}
