@@ -17,6 +17,23 @@ body{
     line-height:1.6;
 }
 
+nav a{
+    text-decoration:none;
+    color:#555;
+    font-size:16px;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#0B63CE;
+}
+
+nav a.active{
+    color:#0B63CE;
+    font-weight:600;
+}
+
+
 a{
     text-decoration:none;
     color:inherit;
