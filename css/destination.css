@@ -468,6 +468,11 @@ header{
     gap:25px;
 }
 
+/* Hidden Destination Card */
+
+.hidden-card{
+    display:none;
+}
 
 /* Single Small Card */
 

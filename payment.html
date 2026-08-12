@@ -146,127 +146,367 @@
             <div class="payment-container">
 
                 <!-- Left Side -->
+<div class="payment-left">
 
-                <div class="payment-left">
+    <div class="payment-card">
 
-                    <div class="payment-card">
+        <h2>Payer Information</h2>
 
-                        <h2>Choose Payment Method</h2>
+        <p class="section-description">
+            Please enter your information to complete your booking.
+        </p>
 
-                        <div class="payment-methods">
+        <div class="payer-form">
 
-                            <button class="method active">
+            <div class="form-row">
 
-                                <i class="fa-regular fa-credit-card"></i>
+                <div class="input-group">
 
-                                <span>Credit Card</span>
+                    <label for="first-name">
+                        First Name
+                    </label>
 
-                            </button>
+                    <input
+                        type="text"
+                        id="first-name"
+                        placeholder="John"
+                        required
+                    >
 
-                            <button class="method">
+                </div>
 
-                                <i class="fa-solid fa-building-columns"></i>
+                <div class="input-group">
 
-                                <span>Debit Card</span>
+                    <label for="last-name">
+                        Last Name
+                    </label>
 
-                            </button>
+                    <input
+                        type="text"
+                        id="last-name"
+                        placeholder="Doe"
+                        required
+                    >
 
-                            <button class="method">
+                </div>
 
-                                <i class="fa-solid fa-wallet"></i>
+            </div>
 
-                                <span>Digital Wallet</span>
+            <div class="form-row">
 
-                            </button>
+                <div class="input-group">
 
-                            <button class="method">
+                    <label for="email">
+                        Email Address
+                    </label>
 
-                                <i class="fa-solid fa-money-bill-wave"></i>
+                    <div class="input-icon">
 
-                                <span>Cash</span>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="john@example.com"
+                            required
+                        >
 
-                            </button>
-
-                        </div>
-
-                        <form class="payment-form">
-
-                            <div class="input-group">
-
-                                <label>Cardholder Name</label>
-
-                                <input type="text"
-                                       placeholder="John Doe">
-
-                            </div>
-
-                            <div class="input-group">
-
-                                <label>Card Number</label>
-
-                                <div class="input-icon">
-
-                                    <input type="text"
-                                           placeholder="0000 0000 0000 0000">
-
-                                    <i class="fa-regular fa-credit-card"></i>
-
-                                </div>
-
-                            </div>
-
-                            <div class="row">
-
-                                <div class="input-group">
-
-                                    <label>Expiry Date</label>
-
-                                    <input type="text"
-                                           placeholder="MM/YY">
-
-                                </div>
-
-                                <div class="input-group">
-
-                                    <label>CVV</label>
-
-                                    <input type="password"
-                                           placeholder="123">
-
-                                </div>
-
-                            </div>
-
-                            <div class="save-card">
-
-                                <input type="checkbox"
-                                       id="save-card">
-
-                                <label for="save-card">
-
-                                    Save card details for future bookings
-
-                                </label>
-
-                            </div>
-
-                        </form>
-
-                    </div>
-
-                    <div class="security-box">
-
-                        <i class="fa-solid fa-shield-halved"></i>
-
-                        <p>
-
-                            Your transaction is encrypted and secured by industry-standard SSL technology.
-
-                        </p>
+                        <i class="fa-regular fa-envelope"></i>
 
                     </div>
 
                 </div>
+
+                <div class="input-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <div class="input-icon">
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            placeholder="+977 98XXXXXXXX"
+                            required
+                        >
+
+                        <i class="fa-solid fa-phone"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="input-group">
+
+                <label for="country">
+                    Country
+                </label>
+
+                <select id="country" required>
+
+                    <option value="">
+                        Select your country
+                    </option>
+
+                    <option value="nepal">
+                        Nepal
+                    </option>
+
+                    <option value="india">
+                        India
+                    </option>
+
+                    <option value="usa">
+                        United States
+                    </option>
+
+                    <option value="uk">
+                        United Kingdom
+                    </option>
+
+                    <option value="australia">
+                        Australia
+                    </option>
+
+                    <option value="canada">
+                        Canada
+                    </option>
+
+                    <option value="japan">
+                        Japan
+                    </option>
+
+                </select>
+
+            </div>
+
+            <div class="input-group">
+
+                <label for="address">
+                    Billing Address
+                </label>
+
+                <input
+                    type="text"
+                    id="address"
+                    placeholder="Street address"
+                    required
+                >
+
+            </div>
+
+            <div class="form-row">
+
+                <div class="input-group">
+
+                    <label for="city">
+                        City
+                    </label>
+
+                    <input
+                        type="text"
+                        id="city"
+                        placeholder="Kathmandu"
+                        required
+                    >
+
+                </div>
+
+                <div class="input-group">
+
+                    <label for="postal-code">
+                        Postal Code
+                    </label>
+
+                    <input
+                        type="text"
+                        id="postal-code"
+                        placeholder="44600"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="form-divider"></div>
+
+        <h2>Payment Method</h2>
+
+        <p class="section-description">
+            Choose your preferred payment method.
+        </p>
+
+        <div class="payment-methods">
+
+            <button type="button" class="method active">
+
+                <i class="fa-regular fa-credit-card"></i>
+
+                <span>Credit Card</span>
+
+            </button>
+
+            <button type="button" class="method">
+
+                <i class="fa-solid fa-building-columns"></i>
+
+                <span>Debit Card</span>
+
+            </button>
+
+            <button type="button" class="method">
+
+                <i class="fa-solid fa-wallet"></i>
+
+                <span>Digital Wallet</span>
+
+            </button>
+
+            <button type="button" class="method">
+
+                <i class="fa-solid fa-money-bill-wave"></i>
+
+                <span>Cash</span>
+
+            </button>
+
+        </div>
+
+        <div class="card-section">
+
+            <div class="input-group">
+
+                <label for="card-name">
+                    Cardholder Name
+                </label>
+
+                <input
+                    type="text"
+                    id="card-name"
+                    placeholder="Name as shown on card"
+                >
+
+            </div>
+
+            <div class="input-group">
+
+                <label for="card-number">
+                    Card Number
+                </label>
+
+                <div class="input-icon">
+
+                    <input
+                        type="text"
+                        id="card-number"
+                        placeholder="0000 0000 0000 0000"
+                        maxlength="19"
+                    >
+
+                    <i class="fa-regular fa-credit-card"></i>
+
+                </div>
+
+            </div>
+
+            <div class="form-row card-details">
+
+                <div class="input-group">
+
+                    <label for="expiry">
+                        Expiry Date
+                    </label>
+
+                    <input
+                        type="text"
+                        id="expiry"
+                        placeholder="MM/YY"
+                        maxlength="5"
+                    >
+
+                </div>
+
+                <div class="input-group">
+
+                    <label for="cvv">
+                        CVV
+                    </label>
+
+                    <div class="input-icon">
+
+                        <input
+                            type="password"
+                            id="cvv"
+                            placeholder="123"
+                            maxlength="4"
+                        >
+
+                        <i class="fa-solid fa-lock"></i>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="billing-option">
+
+            <input
+                type="checkbox"
+                id="same-address"
+                checked
+            >
+
+            <label for="same-address">
+                Billing address is the same as my address
+            </label>
+
+        </div>
+
+        <div class="save-card">
+
+            <input
+                type="checkbox"
+                id="save-card"
+            >
+
+            <label for="save-card">
+                Save card details for future bookings
+            </label>
+
+        </div>
+
+    </div>
+
+    <div class="security-box">
+
+        <div class="security-icon">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+        </div>
+
+        <div>
+
+            <h3>Secure Payment</h3>
+
+            <p>
+                Your payment information is encrypted and protected
+                using industry-standard security technology.
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
 
 
                 

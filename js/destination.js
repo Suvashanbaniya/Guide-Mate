@@ -39,3 +39,52 @@ searchBtn.addEventListener("click", function () {
     });
 
 });
+
+
+/* Sagarmatha Description */
+
+const sagarmathaCard = document.getElementById("sagarmathaCard");
+
+sagarmathaCard.addEventListener("click", function(){
+
+    alert(
+        "Sagarmatha, Nepal\n\n" +
+        "Sagarmatha National Park is famous for its " +
+        "beautiful mountain scenery, trekking routes and " +
+        "spectacular views of Mount Everest."
+    );
+
+});
+
+
+
+
+/* Aama Dablam Description */
+
+const aamaDablamCard = document.getElementById("aamaDablamCard");
+
+aamaDablamCard.addEventListener("click", function(){
+
+    alert(
+        "Aama Dablam, Nepal\n\n" +
+        "Aama Dablam is one of the most beautiful mountains " +
+        "in Nepal. It is famous for its unique shape and " +
+        "magnificent Himalayan scenery."
+    );
+
+});
+
+
+
+/* Load More Destinations */
+
+const loadMoreBtn = document.getElementById("loadMoreBtn");
+const pokharaCard = document.getElementById("pokharaCard");
+
+loadMoreBtn.addEventListener("click", function(){
+
+    pokharaCard.style.display = "block";
+
+    loadMoreBtn.style.display = "none";
+
+});
