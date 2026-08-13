@@ -67,87 +67,289 @@
 <section class="guide-page">
     <!-- filter siderbar -->
 
-    <aside class="filter-pannel">
+    <!-- ======================================================
+     FILTER SIDEBAR
+====================================================== -->
+
+<aside class="filter-pannel">
+
+    <div class="filter-header">
+
         <h2>Filters</h2>
-        <button class="clear-btn">
+
+        <button class="clear-btn" type="button">
             Clear All
         </button>
 
-
-        <!-- destination -->
-
-        <div class="filter-group">
-            <label> Destinations </label>
-            <input 
-            type="text"
-            id="searchInput"
-            placeholder="Search guide  ">
-        </div>
+    </div>
 
 
+    <!-- ==================================================
+         SEARCH GUIDES
+    ================================================== -->
 
-        <!--Guide Rating-->
-        
-        
-        <div class="filter-group">
-            <label> Guide Rating </label>
-            <select>
-                <option> All Ratings </option>
-                <option> 5 Stars </option>
-                <option> 4 stars & Above </option>
-                <option> 3 stars & Above </option>
-                <option> 2 stars & Above </option>
-            </select>
-        </div>
+    <div class="filter-group">
 
+        <label for="searchInput">
+            Search Guides
+        </label>
 
+        <div class="search-box">
 
-        <!-- Price -->
+            <i class="fa-solid fa-magnifying-glass"></i>
 
-
-        <div  class="filter-group">
-            <label>  Price Range </label>
-            <input type  ="range">
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search guide..."
+            >
 
         </div>
 
+    </div>
 
 
+    <!-- ==================================================
+         DESTINATION
+    ================================================== -->
 
-        <!-- languages -->
+    <div class="filter-group">
+
+        <label for="destinationFilter">
+            Destination
+        </label>
+
+        <select id="destinationFilter">
+
+            <option value="all">
+                All Destinations
+            </option>
+
+            <option value="kathmandu">
+                Kathmandu
+            </option>
+
+            <option value="lalitpur">
+                Lalitpur
+            </option>
+
+            <option value="mustang">
+                Mustang
+            </option>
+
+            <option value="pokhara">
+                Pokhara
+            </option>
+
+            <option value="delhi">
+                Delhi
+            </option>
+
+            <option value="london">
+                London
+            </option>
+
+        </select>
+
+    </div>
 
 
-        <div class="filter-group">
-            <label> Language </label>
-            <label> <input   type="checkbox" > English </label>
-             <label> <input   type="checkbox" > हिनदि </label>
-              <label> <input   type="checkbox" > नेपालि </label>
-               <label> <input   type="checkbox" > Espanyol </label>
-            
+    <!-- ==================================================
+         GUIDE RATING
+    ================================================== -->
+
+    <div class="filter-group">
+
+        <label for="ratingFilter">
+            Guide Rating
+        </label>
+
+        <select id="ratingFilter">
+
+            <option value="0">
+                All Ratings
+            </option>
+
+            <option value="5">
+                5 Stars
+            </option>
+
+            <option value="4">
+                4 Stars & Above
+            </option>
+
+            <option value="3">
+                3 Stars & Above
+            </option>
+
+            <option value="2">
+                2 Stars & Above
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <!-- ==================================================
+         PRICE RANGE
+    ================================================== -->
+
+    <div class="filter-group">
+
+        <label for="priceRange">
+            Price Range
+        </label>
+
+        <input
+            type="range"
+            id="priceRange"
+            min="50"
+            max="200"
+            value="200"
+        >
+
+        <div class="price-display">
+
+            <span>$50</span>
+
+            <span id="priceValue">
+                $200
+            </span>
+
         </div>
 
-<!--experience -->
-
-<div class="filter-group">
-    <label> Experience </label>
-    <select>
-        <option>Amateur </option>
-        <option>1+ years  </option>
-        <option>2+ years  </option>
-        <option>5+ years  </option>
-
-    </select>
-</div>
+    </div>
 
 
-    </aside>
+    <!-- ==================================================
+         LANGUAGE
+    ================================================== -->
+
+    <div class="filter-group">
+
+        <label>
+            Language
+        </label>
+
+        <label class="checkbox-label">
+            <input
+                type="checkbox"
+                name="language"
+                value="English"
+            >
+            English
+        </label>
+
+        <label class="checkbox-label">
+            <input
+                type="checkbox"
+                name="language"
+                value="Hindi"
+            >
+            Hindi
+        </label>
+
+        <label class="checkbox-label">
+            <input
+                type="checkbox"
+                name="language"
+                value="Nepali"
+            >
+            Nepali
+        </label>
+
+        <label class="checkbox-label">
+            <input
+                type="checkbox"
+                name="language"
+                value="Spanish"
+            >
+            Spanish
+        </label>
+
+    </div>
+
+
+    <!-- ==================================================
+         EXPERIENCE
+    ================================================== -->
+
+    <div class="filter-group">
+
+        <label for="experienceFilter">
+            Experience
+        </label>
+
+        <select id="experienceFilter">
+
+            <option value="0">
+                Any Experience
+            </option>
+
+            <option value="1">
+                1+ Years
+            </option>
+
+            <option value="2">
+                2+ Years
+            </option>
+
+            <option value="5">
+                5+ Years
+            </option>
+
+        </select>
+
+    </div>
+
+
+    <!--  This is the filter section 
+         GUIDE TYPE
+     -->
+
+    <div class="filter-group">
+
+        <label for="guideTypeFilter">
+            Guide Type
+        </label>
+
+        <select id="guideTypeFilter">
+
+            <option value="all">
+                All Guide Types
+            </option>
+
+            <option value="cultural">
+                Cultural Guide
+            </option>
+
+            <option value="trekking">
+                Trekking Guide
+            </option>
+
+            <option value="food">
+                Food Guide
+            </option>
+
+            <option value="historical">
+                Historical Guide
+            </option>
+
+            <option value="adventure">
+                Adventure Guide
+            </option>
+
+        </select>
+
+    </div>
+
+</aside>
 
 
 
  <!--GUIDE SECTION   -->
- <!-- ======================================================
-                    GUIDE SECTION
-====================================================== -->
+ 
 
 <main class="guide-section">
 
@@ -198,7 +400,7 @@
 
                 <p class="location">📍 Baneshwor, Kathmandu</p>
 
-                <button class="book-btn">Book Now</button>
+                <a href="payment.html" class="book-btn">Book Now</a>
 
             </div>
 
@@ -231,7 +433,7 @@
 
                 <p class="location">📍 Chhampi, Lalitpur</p>
 
-                <button class="book-btn">Book Now</button>
+               <a href="payment.html" class="book-btn">Book Now</a>
 
             </div>
 
@@ -264,7 +466,7 @@
 
                 <p class="location">📍 Mustang, Nepal</p>
 
-                <button class="book-btn">Book Now</button>
+                <a href="payment.html" class="book-btn">Book Now</a>
 
             </div>
 
@@ -297,7 +499,7 @@
 
                 <p class="location">📍 Chhampi, Lalitpur</p>
 
-                <button class="book-btn">Book Now</button>
+             <a href="payment.html" class="book-btn">Book Now</a>
 
             </div>
 
@@ -330,7 +532,7 @@
 
                 <p class="location">📍 London, UK</p>
 
-                <button class="book-btn">Book Now</button>
+               <a href="payment.html" class="book-btn">Book Now</a>
 
             </div>
 
@@ -363,7 +565,7 @@
 
                 <p class="location">📍 London, UK</p>
 
-                <button class="book-btn">Book Now</button>
+               <a href="payment.html" class="book-btn">Book Now</a>
 
             </div>
 
@@ -396,7 +598,7 @@
 
                 <p class="location">📍 Delhi, India</p>
 
-                <button class="book-btn">Book Now</button>
+               <a href="payment.html" class="book-btn">Book Now</a>
 
             </div>
 

@@ -420,6 +420,10 @@ header{
     margin-bottom:20px;
 }
 
+.form-stars i.fa-solid{/* this makes the rating  visible */
+    color:#FFC107;
+}
+
 .form-stars i{
     font-size:24px;
     color:#d6d6d6;
@@ -950,4 +954,9 @@ footer{
         justify-content:center;
     }
 
+}}
+/* Hide reviews until Load More is clicked */
+
+.review-card.hidden-review{
+    display:none;
 }

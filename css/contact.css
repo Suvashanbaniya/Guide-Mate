@@ -426,6 +426,111 @@ img{
 }
 
 
+
+
+
+
+/*-------- Contact Form Notification --------*/
+
+.contact-notification {
+    position: fixed;
+    top: 100px;
+    right: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    min-width: 320px;
+    max-width: 450px;
+
+    padding: 16px 20px;
+
+    background: #ffffff;
+
+    border-radius: 10px;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+
+    z-index: 9999;
+
+    opacity: 0;
+    transform: translateX(120%);
+
+    transition:
+        opacity 0.4s ease,
+        transform 0.4s ease;
+}
+
+
+/*-------- Show Notification --------*/
+
+.contact-notification.show {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
+/*-------- Success Notification --------*/
+
+.contact-notification.success {
+    border-left: 5px solid #28a745;
+}
+
+
+/*-------- Error Notification --------*/
+
+.contact-notification.error {
+    border-left: 5px solid #dc3545;
+}
+
+
+/*-------- Success Icon --------*/
+
+.contact-notification.success i {
+    color: #28a745;
+    font-size: 22px;
+}
+
+
+/*-------- Error Icon --------*/
+
+.contact-notification.error i {
+    color: #dc3545;
+    font-size: 22px;
+}
+
+
+/*-------- Notification Text --------*/
+
+.contact-notification span {
+    color: #333333;
+}
+
+
+/*-------- Responsive Notification --------*/
+
+@media (max-width: 600px) {
+
+    .contact-notification {
+        top: 90px;
+        right: 15px;
+        left: 15px;
+
+        min-width: auto;
+        max-width: none;
+    }
+
+}
+
+
+
+
+
 /* ---------- Google Map Section ---------- */
 
 .map-section{
@@ -507,6 +612,13 @@ img{
     border:none;
 
 }
+
+
+
+
+
+
+
 
 
 /* ---------- FAQ Section ---------- */

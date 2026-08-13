@@ -245,7 +245,9 @@
 
                     </div>
 
-                    <button>View Details</button>
+                  <button class="view-details-btn" data-destination="mustang">
+    View Details
+</button>
 
                 </div>
 
@@ -278,8 +280,9 @@
 
                     </div>
 
-                    <button>View Details</button>
-
+                    <button class="view-details-btn" data-destination="limi">
+    View Details
+</button>
                 </div>
 
             </div>
@@ -308,8 +311,9 @@
 
         </div>
 
-        <button>View Details</button>
-
+        <button class="view-details-btn" data-destination="manaslu">
+    View Details
+</button>
     </div>
 
 </div>
@@ -340,7 +344,10 @@
 
         </div>
 
-        <button>View Details</button>
+       <button class="view-details-btn" data-destination="gokyo">
+    View Details
+</button>
+
 
     </div>
 
@@ -374,7 +381,10 @@
 
         </div>
 
-        <button>View Details</button>
+       <button class="view-details-btn" data-destination="Garden">
+    View Details
+</button>
+
 
     </div>
 
@@ -397,6 +407,48 @@
 
 
 </section>
+</section>
+
+
+<!-- Destination Details Popup -->
+
+<div class="details-modal" id="detailsModal">
+
+    <div class="details-box">
+
+        <button class="close-details" id="closeDetails">
+            &times;
+        </button>
+
+        <img src="" alt="Destination" id="detailsImage">
+
+        <div class="details-content">
+
+            <h2 id="detailsTitle"></h2>
+
+            <p id="detailsDescription"></p>
+
+            <div class="details-info">
+
+                <span id="detailsGuides"></span>
+
+                <span id="detailsRating"></span>
+
+                <span id="detailsPrice"></span>
+
+            </div>
+
+            <h3>About this destination</h3>
+
+            <p id="detailsAbout"></p>
+
+        </div>
+
+    </div>
+
+</div>
+
+
 <section class="newsletter">
 
     <div class="container">
