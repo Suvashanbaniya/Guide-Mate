@@ -208,11 +208,14 @@
 
             </div>
 
-            <button class="map-btn">
-                <i class="fa-solid fa-map-location-dot"></i>
-                View Map
-            </button>
-
+            <a 
+    href="https://www.google.com/maps/search/Nepal"
+    target="_blank"
+    class="map-btn"
+>
+    <i class="fa-solid fa-map-location-dot"></i>
+    View Map
+</a>
         </div>
 
 
@@ -448,6 +451,7 @@
 
 </div>
 
+<!-- Newsletter -->
 
 <section class="newsletter">
 
@@ -459,9 +463,14 @@
             Subscribe to receive travel tips, destination updates and exclusive offers.
         </p>
 
-        <form class="newsletter-form">
+        <form class="newsletter-form" id="newsletterForm">
 
-            <input type="email" placeholder="Enter your email">
+            <input 
+                type="email" 
+                id="emailInput"
+                placeholder="Enter your email"
+                required
+            >
 
             <button type="submit">
                 Subscribe

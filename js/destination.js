@@ -287,3 +287,20 @@ detailsModal.addEventListener("click", function(event){
     }
 
 });
+
+
+
+
+/* Newsletter Subscribe */
+
+const newsletterForm = document.getElementById("newsletterForm");
+
+newsletterForm.addEventListener("submit", function(event){
+
+    event.preventDefault();
+
+    alert("Successfully subscribed!");
+
+    newsletterForm.reset();
+
+});

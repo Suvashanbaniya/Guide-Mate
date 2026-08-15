@@ -970,3 +970,110 @@ footer{
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+/* -- Payment Popup -- */
+
+.payment-popup{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:2000;
+}
+
+
+/* -- Popup Box -- */
+
+.popup-box{
+    width:90%;
+    max-width:400px;
+    background:#fff;
+    padding:30px;
+    border-radius:16px;
+    text-align:center;
+    box-shadow:0 15px 40px rgba(0,0,0,.2);
+}
+
+.popup-box > i{
+    font-size:50px;
+    color:#2563eb;
+    margin-bottom:15px;
+}
+
+.popup-box h2{
+    margin-bottom:10px;
+    color:#111827;
+}
+
+.popup-box p{
+    color:#6b7280;
+    margin-bottom:25px;
+}
+
+
+/* -- Buttons -- */
+
+.popup-buttons{
+    display:flex;
+    gap:12px;
+}
+
+.popup-buttons button,
+.done-btn{
+    flex:1;
+    height:45px;
+    border-radius:8px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+
+/* -- Cancel -- */
+
+.cancel-btn{
+    background:#fff;
+    border:1px solid #d1d5db;
+}
+
+
+/* -- Confirm -- */
+
+.confirm-btn,
+/* -- Done Button -- */
+
+.done-btn{
+    width:100%;
+    height:48px;
+    padding:0 25px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:#ffffff;
+    font-family:'Poppins',sans-serif;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.done-btn:hover{
+    background:#1d4ed8;
+}
+
+/* -- Success -- */
+
+.popup-box .success{
+    color:#16a34a;
+}

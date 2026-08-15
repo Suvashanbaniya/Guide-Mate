@@ -1,88 +1,275 @@
-/* Remove default spacing */
+/* -------- Reset -------- */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* Body */
 
-body{
-    font-family:'Poppins',sans-serif;
-    overflow:hidden;
+/* -------- Body -------- */
+
+body {
+    font-family: "Poppins", sans-serif;
+
+    background-color: #ffffff;
+
+    color: #082f6b;
 }
 
-/* Background Image */
 
-.background-image{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    z-index:-1;
+/* -------- Landing Page -------- */
+
+.landing-page {
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background-color: #ffffff;
+
+    padding: 40px 20px;
 }
 
-/* Container */
 
-.container{
-    width:100%;
-    height:100vh;
+/* -------- Logo Container -------- */
 
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
+.logo-container {
+    width: 170px;
+    height: 170px;
 
-    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 25px;
+
+    background-color: transparent;
+
+    box-shadow: none;
 }
 
-/* Logo */
 
-.logo{
-    width:140px;
-    margin-bottom:20px;
+/* -------- Logo -------- */
+
+.logo {
+    width: 125px;
+    height: 125px;
+
+    object-fit: contain;
+
+    display: block;
+
+    background-color: transparent;
+
+    border: none;
+
+    box-shadow: none;
 }
 
-/* Title */
 
-.title{
-    font-size:60px;
-    font-weight:700;
-    margin-bottom:15px;
+/* -------- Main Heading -------- */
+
+.title {
+    font-size: 42px;
+
+    line-height: 1.05;
+
+    font-weight: 700;
+
+    color: #062d67;
+
+    margin-bottom: 20px;
 }
 
-/* Slogan */
 
-.slogan{
-    font-size:22px;
-    margin-bottom:35px;
+/* -------- Description -------- */
+
+.description {
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    font-weight: 400;
+
+    color: #4d515a;
+
+    margin-bottom: 40px;
 }
 
-/* Button */
 
-.btn{
-    padding:15px 40px;
-    border:none;
-    border-radius:10px;
-    background:#0B63CE;
-    color:white;
-    font-size:18px;
-    cursor:pointer;
-    transition:.3s;
+/* -------- Button Container -------- */
+
+.button-container {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
 }
 
-.btn:hover{
-    background:#084D9C;
+
+/* -------- Common Button -------- */
+
+.btn {
+    height: 50px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    padding: 0 20px;
+
+    border-radius: 5px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 500;
+
+    letter-spacing: 0.4px;
+
+    transition: all 0.3s ease;
 }
 
-/* Footer Text */
 
-.footer-text{
-    margin-top:30px;
-    font-size:14px;
-    color:#f1f1f1;
+/* -------- Get Started Button -------- */
+
+.get-started {
+    min-width: 107px;
+
+    background-color: #062d67;
+
+    color: #ffffff;
+
+    border: 1px solid #062d67;
+}
+
+
+/* -------- Arrow -------- */
+
+.get-started span {
+    font-size: 19px;
+
+    margin-left: 7px;
+
+    line-height: 0;
+}
+
+
+/* -------- Get Started Hover -------- */
+
+.get-started:hover {
+    background-color: #0b3b7a;
+
+    border-color: #0b3b7a;
+
+    transform: translateY(-2px);
+}
+
+
+/* -------- Learn More Button -------- */
+
+.learn-more {
+    min-width: 95px;
+
+    background-color: #ffffff;
+
+    color: #062d67;
+
+    border: 1.5px solid #062d67;
+}
+
+
+/* -------- Learn More Hover -------- */
+
+.learn-more:hover {
+    background-color: #062d67;
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* -------- Tablet -------- */
+
+@media (max-width: 768px) {
+
+    .title {
+        font-size: 36px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .description br {
+        display: none;
+    }
+
+}
+
+
+/* -------- Mobile -------- */
+
+@media (max-width: 500px) {
+
+    .landing-page {
+        padding: 30px 20px;
+    }
+
+
+    .logo-container {
+        width: 140px;
+        height: 140px;
+
+        margin-bottom: 20px;
+    }
+
+
+    .logo {
+        width: 105px;
+        height: 105px;
+    }
+
+
+    .title {
+        font-size: 30px;
+
+        line-height: 1.1;
+    }
+
+
+    .description {
+        font-size: 13px;
+
+        line-height: 1.6;
+
+        margin-bottom: 30px;
+    }
+
+
+    .button-container {
+        gap: 8px;
+    }
+
+
+    .btn {
+        height: 46px;
+
+        padding: 0 18px;
+
+        font-size: 12px;
+    }
+
 }
