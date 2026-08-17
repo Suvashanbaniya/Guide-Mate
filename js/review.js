@@ -94,8 +94,6 @@ stars.forEach(function(star, index) {
 
 
 
-
-
 /* Get the Load More button */
 const loadMoreBtn = document.getElementById("loadMoreBtn");
 
