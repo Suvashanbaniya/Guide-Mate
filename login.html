@@ -1,81 +1,527 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Guide Mate Login</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
     <link rel="stylesheet" href="css/login.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
 </head>
+
+
 <body>
+
+
     <div class="login-container">
-        <!--left panel-->
+
+
+        <!-- -------- Left Panel -------- -->
+
         <div class="left-panel">
+
             <img src="img/logoo.png"
-            class="logo"
-            alt="Guide Mate">
+                 class="logo"
+                 alt="Guide Mate">
 
-            <h1> Guide mate</h1>
+            <h1>Guide Mate</h1>
 
-            <h2> Your bride to authentic travel experiences.</h2>
+            <h2>
+                Your bridge to authentic travel experiences.
+            </h2>
+
             <p>
-                Join a  community of travellers exploring  the worlds
-                best destination with the experts local guides .
+                Join a community of travellers exploring the world's
+                best destinations with expert local guides.
             </p>
 
+
             <div class="stats">
+
                 <div>
-                    <h3>4.9/5</h3> 
-                    <span> Average Rating </span>
-                  </div>
-                  <div>
-                    <h3>120 +</h3> 
-                    <span> Countries </span>
-                  </div>
+
+                    <h3>4.9/5</h3>
+
+                    <span>
+                        Average Rating
+                    </span>
+
                 </div>
+
+
+                <div>
+
+                    <h3>120+</h3>
+
+                    <span>
+                        Countries
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- -------- Right Panel -------- -->
+
+        <div class="right-panel">
+
+
+            <!-- -------- Login and Sign Up Tabs -------- -->
+
+            <div class="tabs">
+
+                <button
+                    type="button"
+                    id="loginTab"
+                    class="tab active">
+
+                    Login
+
+                </button>
+
+
+                <button
+                    type="button"
+                    id="signupTab"
+                    class="tab">
+
+                    Sign Up
+
+                </button>
+
             </div>
 
 
 
-            <!-- for right panel -->
-            <div class="right-panel">
-                <div class="tabs">
-    <a href="login.html" class="tab active">Login</a>
-    <a href="signup.html" class="tab">Sign Up</a>
-</div>
-                <h2>Welcome back</h2>
-                <p>Login to continue your journey</p>
+            <!-- -------- Login Section -------- -->
 
-                <form id="loginForm" onsubmit="event.preventDefault(); window.location.href='home.html';">
-                    <label>Email Address</label>
-                    <input type="email" placeholder="suvashan@example.com">
+            <div id="loginSection">
 
-                    <label>Password</label>
-                    <input type="password" placeholder="***********">
+                <h2>
+                    Welcome back
+                </h2>
 
-                    <button type="submit" class="login-btn">Login</button>
+                <p>
+                    Login to continue your journey
+                </p>
+
+
+                <form
+                    id="loginForm"
+                    onsubmit="event.preventDefault(); window.location.href='home.html';">
+
+
+                    <label>
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        placeholder="suvashan@example.com"
+                        required>
+
+
+                    <label>
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        placeholder="***********"
+                        required>
+
+
+                    <button
+                        type="submit"
+                        class="login-btn">
+
+                        Login
+
+                    </button>
+
                 </form>
 
-                <div class="divider">OR CONTINUE WITH</div>
-                   <div class="social">
 
-    <button type="button" class="social-btn google-btn">
-        <i class="fa-brands fa-google"></i>
-        <span>Google</span>
-    </button>
-
-    <button type="button" class="social-btn facebook-btn">
-        <i class="fa-brands fa-facebook-f"></i>
-        <span>Facebook</span>
-    </button>
-
-</div>
+                <div class="divider">
+                    OR CONTINUE WITH
                 </div>
+
+
+                <div class="social">
+
+                    <button
+                        type="button"
+                        class="social-btn google-btn">
+
+                        <i class="fa-brands fa-google"></i>
+
+                        <span>
+                            Google
+                        </span>
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="social-btn facebook-btn">
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                        <span>
+                            Facebook
+                        </span>
+
+                    </button>
+
+                </div>
+
             </div>
+
+
+
+            <!-- -------- Create Account Section -------- -->
+
+            <div
+                id="signupSection"
+                class="signup-section">
+
+
+                <h2>
+                    Create your account
+                </h2>
+
+                <p>
+                    Join Guide Mate and start your journey
+                </p>
+
+
+
+                <!-- -------- Account Type -------- -->
+
+                <div class="account-type">
+
+                    <button
+                        type="button"
+                        id="touristBtn"
+                        class="type-btn active">
+
+                        <i class="fa-solid fa-person-walking-luggage"></i>
+
+                        Tourist
+
+                    </button>
+
+
+                    <button
+                        type="button"
+                        id="guideBtn"
+                        class="type-btn">
+
+                        <i class="fa-solid fa-compass"></i>
+
+                        Guide
+
+                    </button>
+
+                </div>
+
+
+
+                <form id="signupForm">
+
+
+                    <!-- -------- Personal Information -------- -->
+
+                    <h3>
+                        Personal Information
+                    </h3>
+
+
+                    <label for="fullName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        placeholder="Enter your full name"
+                        required>
+
+
+                    <label for="signupEmail">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="signupEmail"
+                        placeholder="Enter your email"
+                        required>
+
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter your phone number"
+                        required>
+
+
+                    <label for="city">
+                        City / Location
+                    </label>
+
+                    <input
+                        type="text"
+                        id="city"
+                        placeholder="e.g. Kathmandu"
+                        required>
+
+
+
+                    <!-- -------- Guide Information -------- -->
+
+                    <div
+                        id="guideSection"
+                        class="guide-section">
+
+
+                        <h3>
+                            Guide Information
+                        </h3>
+
+
+                        <!-- -------- Profile Photo -------- -->
+
+                        <label for="profilePhoto">
+                            Profile Photo
+                        </label>
+
+                        <input
+                            type="file"
+                            id="profilePhoto"
+                            accept="image/*">
+
+
+
+                        <!-- -------- Guide Type -------- -->
+
+                        <label for="guideType">
+                            Guide Type
+                        </label>
+
+                        <select id="guideType">
+
+                            <option value="">
+                                Select guide type
+                            </option>
+
+                            <option value="local">
+                                Local Guide
+                            </option>
+
+                            <option value="tour">
+                                Tour Guide
+                            </option>
+
+                            <option value="trekking">
+                                Trekking Guide
+                            </option>
+
+                            <option value="cultural">
+                                Cultural Guide
+                            </option>
+
+                            <option value="adventure">
+                                Adventure Guide
+                            </option>
+
+                        </select>
+
+
+
+                        <!-- -------- Experience -------- -->
+
+                        <label for="experience">
+                            Years of Experience
+                        </label>
+
+                        <input
+                            type="number"
+                            id="experience"
+                            min="0"
+                            placeholder="e.g. 3">
+
+
+
+                        <!-- -------- Languages -------- -->
+
+                        <label for="languages">
+                            Languages Spoken
+                        </label>
+
+                        <input
+                            type="text"
+                            id="languages"
+                            placeholder="e.g. Nepali, English, Hindi">
+
+
+
+                        <!-- -------- Destinations -------- -->
+
+                        <label for="destinations">
+                            Destinations You Cover
+                        </label>
+
+                        <input
+                            type="text"
+                            id="destinations"
+                            placeholder="e.g. Kathmandu, Pokhara">
+
+
+
+                        <!-- -------- About Guide -------- -->
+
+                        <label for="bio">
+                            About You
+                        </label>
+
+                        <textarea
+                            id="bio"
+                            rows="4"
+                            placeholder="Tell tourists about yourself..."></textarea>
+
+
+
+                        <!-- -------- Verification Documents -------- -->
+
+                        <h3>
+                            Verification Documents
+                        </h3>
+
+
+                        <label for="governmentId">
+                            Government ID
+                        </label>
+
+                        <input
+                            type="file"
+                            id="governmentId"
+                            accept=".jpg,.jpeg,.png,.pdf">
+
+
+                        <label for="guideLicense">
+                            Guide License / Certificate
+                        </label>
+
+                        <input
+                            type="file"
+                            id="guideLicense"
+                            accept=".jpg,.jpeg,.png,.pdf">
+
+                    </div>
+
+
+
+                    <!-- -------- Account Security -------- -->
+
+                    <h3>
+                        Account Security
+                    </h3>
+
+
+                    <label for="password">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Create a password"
+                        required>
+
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm your password"
+                        required>
+
+
+
+                    <!-- -------- Terms and Conditions -------- -->
+
+                    <div class="terms">
+
+                        <input
+                            type="checkbox"
+                            id="terms"
+                            required>
+
+                        <label for="terms">
+
+                            I agree to the
+
+                            <a href="#">
+                                Terms & Conditions
+                            </a>
+
+                        </label>
+
+                    </div>
+
+
+
+                    <!-- -------- Create Account Button -------- -->
+
+                    <button
+                        type="submit"
+                        class="login-btn">
+
+                        Create Account
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
     </div>
-    
+
+
+
+    <script src="js/login.js"></script>
+
 </body>
+
 </html>

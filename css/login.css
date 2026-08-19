@@ -5,214 +5,753 @@
     font-family:'Poppins', 'Segoe UI', Arial, sans-serif;
 }
 
+
+/* -------- Body -------- */
+
 body{
+
     background:#f4f6fb;
+
     display:flex;
     justify-content:center;
     align-items:center;
+
     min-height:100vh;
+
     padding:20px;
-     overflow-y:auto;
+
+    overflow-y:auto;
+
 }
 
-/*  main card */
+
+/* -------- Main Card -------- */
+
 .login-container{
+
     width:1000px;
+
     height:auto;
+
     min-height:650px;
+
     display:flex;
+
     background:white;
+
     border-radius:15px;
+
     overflow:hidden;
+
     box-shadow:0 10px 30px rgba(0,0,0,.15);
+
 }
 
-/* left side */
+
+/* -------- Left Side -------- */
 
 .left-panel{
+
     width:45%;
+
     color:white;
+
     padding:50px;
 
     background:
-    linear-gradient(rgba(21, 0, 159, 0.968),
-    rgba(1, 24, 60, 0.8)),
-    url("img/login.jpg");
+    linear-gradient(
+        rgba(21, 0, 159, 0.968),
+        rgba(1, 24, 60, 0.8)
+    ),
+    url("../img/login.jpg");
 
     background-size:cover;
 
+    background-position:center;
+
 }
+
+
 .logo{
+
     width:60px;
+
     margin-bottom:20px;
 
 }
 
+
 .left-panel h1,
 .left-panel h2,
-.right-panel h2 {
+.right-panel h2{
+
     font-family:'Poppins', 'Segoe UI', Arial, sans-serif;
+
 }
+
+
+.left-panel h1{
+
+    margin-bottom:10px;
+
+}
+
+
+.left-panel h2{
+
+    font-size:24px;
+
+    line-height:1.4;
+
+}
+
 
 .left-panel p{
+
     margin-top:20px;
+
     line-height:1.6;
+
     font-family:'Inter', 'Segoe UI', Arial, sans-serif;
-}
-
-/*right side */
-.right-panel{
-    width:55%;
-    padding:60px;
 
 }
 
-/* Tabs */
 
-.tabs {
+/* -------- Statistics -------- */
+
+.stats{
+
     display:flex;
-    justify-content :center;
-    gap:40px;
-    margin-bottom:40px;
-}
 
-.tabs button{
-    border:none;
-    background:none;
-    cursor:pointer;
-    font-size:16px;
-    padding-bottom:8px
+    gap:50px;
 
-}
-
-.active {
-    border-bottom:3px solid #0d4a8b;
-    color:#0d4a8b;
-    font-weight:bold;
+    margin-top:40px;
 
 }
 
 
+.stats h3{
+
+    font-size:24px;
+
+    margin-bottom:5px;
+
+}
 
 
+.stats span{
+
+    font-size:13px;
+
+    opacity:.9;
+
+}
 
 
+/* -------- Right Side -------- */
+
+.right-panel{
+
+    width:55%;
+
+    padding:50px 60px;
+
+    max-height:90vh;
+
+    overflow-y:auto;
+
+}
 
 
-
-
-
-/*this is for tab link */
-/* Login & Sign Up Tabs */
+/* -------- Tabs -------- */
 
 .tabs{
+
     display:flex;
+
     width:100%;
+
     background:#F5F7FA;
+
     border-radius:12px;
+
     padding:5px;
+
     margin-bottom:30px;
+
     gap:5px;
+
 }
+
 
 .tab{
+
     flex:1;
+
     text-align:center;
+
     text-decoration:none;
+
+    border:none;
+
     padding:12px 0;
+
     border-radius:10px;
+
     color:#666;
+
     font-size:16px;
+
     font-weight:600;
+
     background:transparent;
+
+    cursor:pointer;
+
     transition:.3s;
+
 }
+
 
 .tab:hover{
+
     color:#0B63CE;
+
 }
+
 
 .tab.active{
+
     background:#0B63CE;
+
     color:#fff;
+
+}
+
+
+/* -------- Login Section -------- */
+
+#loginSection h2,
+#signupSection h2{
+
+    color:#172B4D;
+
+    margin-bottom:8px;
+
 }
 
 
-/* this is form main part */
-form {
-    margin-top:30px;/* for spacing*/
+#loginSection > p,
+#signupSection > p{
+
+    color:#777;
+
+    font-size:14px;
 
 }
+
+
+/* -------- Form -------- */
+
+form{
+
+    margin-top:25px;
+
+}
+
+
 label{
+
     display:block;
-    margin-top:20px;
-    margin-bottom:8px
+
+    margin-top:18px;
+
+    margin-bottom:8px;
+
+    color:#333;
+
+    font-size:14px;
+
+    font-weight:500;
+
 }
 
-input{
+
+input,
+select,
+textarea{
+
     width:100%;
-    padding:14px;
-    border :1px solid #ccc;
+
+    padding:13px 14px;
+
+    border:1px solid #ccc;
+
     border-radius:10px;
+
+    outline:none;
+
+    font-size:14px;
+
+    background:white;
+
+    transition:.3s;
+
 }
+
+
+input:focus,
+select:focus,
+textarea:focus{
+
+    border-color:#0B63CE;
+
+    box-shadow:0 0 0 3px rgba(11,99,206,.10);
+
+}
+
+
+textarea{
+
+    resize:vertical;
+
+    min-height:100px;
+
+}
+
+
+select{
+
+    cursor:pointer;
+
+}
+
+
+/* -------- Login Button -------- */
 
 .login-btn{
+
     width:100%;
+
     margin-top:30px;
+
     padding:15px;
+
     background:#0d4a8b;
+
     color:white;
+
     border:none;
+
     border-radius:10px;
+
     cursor:pointer;
 
+    font-size:15px;
+
+    font-weight:600;
+
+    transition:.3s;
+
 }
-/* divider */
+
+
+.login-btn:hover{
+
+    background:#0B63CE;
+
+    transform:translateY(-1px);
+
+    box-shadow:0 6px 15px rgba(13,74,139,.20);
+
+}
+
+
+/* -------- Divider -------- */
+
 .divider{
+
     text-align:center;
+
     margin:20px 0;
+
     color:#777;
+
+    font-size:13px;
+
 }
+
+
+/* -------- Social Buttons -------- */
 
 .social{
+
     display:flex;
+
     gap:15px;
+
 }
+
 
 .social-btn{
+
     flex:1;
+
     display:flex;
+
     align-items:center;
+
     justify-content:center;
+
     gap:10px;
+
     padding:12px 10px;
+
     border:1px solid #d9e2f0;
+
     border-radius:12px;
+
     background:white;
+
     cursor:pointer;
+
     font-weight:600;
+
     color:#333;
+
     transition:all 0.2s ease;
+
     box-shadow:0 2px 6px rgba(0,0,0,0.04);
+
 }
+
 
 .social-btn i{
+
     font-size:20px;
-    margin-right:10px;
+
+    margin-right:5px;
+
 }
+
 
 .google-btn i{
+
     color:#37db5b;
+
 }
+
 
 .facebook-btn i{
+
     color:#1877F2;
+
 }
+
 
 .social-btn:hover{
+
     transform:translateY(-1px);
+
     box-shadow:0 4px 10px rgba(0,0,0,0.08);
+
     background:#f8fbff;
+
 }
 
 
+/* -------- Sign Up Section -------- */
+
+.signup-section{
+
+    display:none;
+
+}
+
+
+/* -------- Account Type -------- */
+
+.account-type{
+
+    display:flex;
+
+    gap:12px;
+
+    margin:25px 0 20px;
+
+}
+
+
+.type-btn{
+
+    flex:1;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    height:50px;
+
+    border:1px solid #d9e2f0;
+
+    border-radius:10px;
+
+    background:#F5F7FA;
+
+    color:#555;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+
+.type-btn i{
+
+    font-size:17px;
+
+}
+
+
+.type-btn:hover{
+
+    border-color:#0B63CE;
+
+    color:#0B63CE;
+
+}
+
+
+.type-btn.active{
+
+    background:#0B63CE;
+
+    border-color:#0B63CE;
+
+    color:white;
+
+    box-shadow:0 5px 12px rgba(11,99,206,.18);
+
+}
+
+
+/* -------- Section Headings -------- */
+
+.signup-section h3{
+
+    margin-top:25px;
+
+    margin-bottom:5px;
+
+    color:#0d4a8b;
+
+    font-size:16px;
+
+}
+
+
+/* -------- Guide Section -------- */
+
+.guide-section{
+
+    display:none;
+
+}
+
+
+/* -------- File Upload -------- */
+
+input[type="file"]{
+
+    padding:10px;
+
+    background:#f8fafc;
+
+    cursor:pointer;
+
+}
+
+
+input[type="file"]::file-selector-button{
+
+    border:none;
+
+    padding:8px 12px;
+
+    margin-right:10px;
+
+    border-radius:7px;
+
+    background:#e8f1fc;
+
+    color:#0d4a8b;
+
+    font-weight:500;
+
+    cursor:pointer;
+
+}
+
+
+/* -------- Terms -------- */
+
+.terms{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:8px;
+
+    margin-top:20px;
+
+}
+
+
+.terms input{
+
+    width:auto;
+
+    margin-top:4px;
+
+}
+
+
+.terms label{
+
+    margin:0;
+
+    font-size:13px;
+
+    color:#666;
+
+}
+
+
+.terms a{
+
+    color:#0B63CE;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+}
+
+
+.terms a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+/* -------- Sign Up Button -------- */
+
+#signupSection .login-btn{
+
+    margin-top:22px;
+
+}
+
+
+/* -------- Scrollbar -------- */
+
+.right-panel::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+
+.right-panel::-webkit-scrollbar-track{
+
+    background:#f5f5f5;
+
+}
+
+
+.right-panel::-webkit-scrollbar-thumb{
+
+    background:#c5d2e3;
+
+    border-radius:10px;
+
+}
+
+
+/* -------- Responsive Design -------- */
+
+@media(max-width:850px){
+
+    .login-container{
+
+        width:100%;
+
+    }
+
+    .left-panel{
+
+        width:40%;
+
+        padding:35px;
+
+    }
+
+    .right-panel{
+
+        width:60%;
+
+        padding:40px;
+
+    }
+
+}
+
+
+@media(max-width:700px){
+
+    body{
+
+        align-items:flex-start;
+
+    }
+
+    .login-container{
+
+        flex-direction:column;
+
+        margin:20px 0;
+
+    }
+
+    .left-panel{
+
+        width:100%;
+
+        padding:35px;
+
+    }
+
+    .right-panel{
+
+        width:100%;
+
+        max-height:none;
+
+        padding:35px;
+
+        overflow:visible;
+
+    }
+
+}

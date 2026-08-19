@@ -2,10 +2,8 @@
 
 const profilePic = document.getElementById("profilePic");
 
-profilePic.addEventListener("click", function () {
-
+profilePic.addEventListener("click", () => {
     window.location.href = "profile.html";
-
 });
 
 
@@ -14,26 +12,22 @@ profilePic.addEventListener("click", function () {
 const searchInput = document.getElementById("searchInput");
 const searchBtn = document.getElementById("searchBtn");
 
-searchBtn.addEventListener("click", function () {
+searchBtn.addEventListener("click", () => {
 
-    const searchValue = searchInput.value.toLowerCase().trim();
 
-    const destinationCards = document.querySelectorAll(".destination-card");
 
-    destinationCards.forEach(function(card){
+    // this part shows the card that is searched
+    const searchText = searchInput.value.toLowerCase().trim();
+    const cards = document.querySelectorAll(".destination-card");
 
-        const destinationName = card.querySelector("h3").textContent.toLowerCase();
+    cards.forEach(card => {
 
-        if(destinationName.includes(searchValue)){
+        const name = card.querySelector("h3").textContent.toLowerCase();
 
+        if (name.includes(searchText)) {
             card.style.display = "block";
-
-        }
-
-        else{
-
+        } else {
             card.style.display = "none";
-
         }
 
     });
@@ -43,27 +37,21 @@ searchBtn.addEventListener("click", function () {
 
 /* Sagarmatha Description */
 
-const sagarmathaCard = document.getElementById("sagarmathaCard");
-
-sagarmathaCard.addEventListener("click", function(){
+document.getElementById("sagarmathaCard").addEventListener("click", () => {
 
     alert(
         "Sagarmatha, Nepal\n\n" +
-        "Sagarmatha National Park is famous for its " +
-        "beautiful mountain scenery, trekking routes and " +
-        "spectacular views of Mount Everest."
+        "Sagarmatha National Park is famous for its beautiful " +
+        "mountain scenery, trekking routes and spectacular views " +
+        "of Mount Everest."
     );
 
 });
 
 
-
-
 /* Aama Dablam Description */
 
-const aamaDablamCard = document.getElementById("aamaDablamCard");
-
-aamaDablamCard.addEventListener("click", function(){
+document.getElementById("aamaDablamCard").addEventListener("click", () => {
 
     alert(
         "Aama Dablam, Nepal\n\n" +
@@ -75,60 +63,17 @@ aamaDablamCard.addEventListener("click", function(){
 });
 
 
-
 /* Load More Destinations */
 
 const loadMoreBtn = document.getElementById("loadMoreBtn");
 const pokharaCard = document.getElementById("pokharaCard");
 
-loadMoreBtn.addEventListener("click", function(){
+loadMoreBtn.addEventListener("click", () => {
 
     pokharaCard.style.display = "block";
-
     loadMoreBtn.style.display = "none";
 
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Destination Details */
-
-const detailsModal = document.getElementById("detailsModal");
-
-const closeDetails = document.getElementById("closeDetails");
-
-const viewDetailsButtons = document.querySelectorAll(".view-details-btn");
-
-const detailsImage = document.getElementById("detailsImage");
-
-const detailsTitle = document.getElementById("detailsTitle");
-
-const detailsDescription = document.getElementById("detailsDescription");
-
-const detailsGuides = document.getElementById("detailsGuides");
-
-const detailsRating = document.getElementById("detailsRating");
-
-const detailsPrice = document.getElementById("detailsPrice");
-
-const detailsAbout = document.getElementById("detailsAbout");
 
 
 /* Destination Information */
@@ -136,166 +81,125 @@ const detailsAbout = document.getElementById("detailsAbout");
 const destinationDetails = {
 
     mustang: {
-
         title: "Mustang, Nepal",
-
         image: "dimg/mustang.jpg",
-
         description: "Explore the beautiful landscapes and unique culture of Mustang.",
-
         guides: "32 Guides",
-
         rating: "⭐ 4.8",
-
         price: "From $45/day",
-
         about: "Mustang is known for its beautiful mountain landscapes, traditional villages and unique Himalayan culture. It is a wonderful destination for travelers who enjoy trekking, nature and cultural experiences."
-
     },
-
 
     limi: {
-
         title: "Limi Valley, Nepal",
-
         image: "dimg/limi.jpg",
-
         description: "A remote Himalayan valley with untouched natural beauty.",
-
         guides: "18 Guides",
-
         rating: "⭐ 4.7",
-
         price: "From $50/day",
-
         about: "Limi Valley offers peaceful landscapes, traditional villages and beautiful mountain views. It is suitable for travelers looking for a quiet and less crowded Himalayan experience."
-
     },
-
 
     manaslu: {
-
         title: "Manaslu, Nepal",
-
         image: "dimg/manaslu.jpg",
-
         description: "Snowy mountains with breathtaking hiking routes.",
-
         guides: "24 Guides",
-
         rating: "⭐ 4.9",
-
         price: "From $55/day",
-
         about: "The Manaslu region is famous for its mountain scenery and trekking routes. Travelers can experience beautiful landscapes, traditional communities and spectacular Himalayan views."
-
     },
-
 
     gokyo: {
-
         title: "Gokyo, Nepal",
-
         image: "dimg/gokyo.jpg",
-
         description: "The stunning view of the mountains.",
-
         guides: "52 Guides",
-
         rating: "⭐ 5.0",
-
         price: "From $60/day",
-
         about: "Gokyo is known for its beautiful mountain scenery and peaceful Himalayan environment. The destination provides spectacular views and memorable trekking experiences."
-
     },
 
-
     pokhara: {
-
         title: "Pokhara, Nepal",
-
         image: "dimg/garden.jpg",
-
         description: "A beautiful city surrounded by mountains and lakes.",
-
         guides: "60 Guides",
-
         rating: "⭐ 4.9",
-
         price: "From $40/day",
-
         about: "Pokhara is a beautiful destination surrounded by mountains, lakes and natural landscapes. It is a popular place for relaxation, sightseeing, adventure activities and exploring the surrounding areas."
-
     }
 
 };
 
 
-/* Open Destination Details */
+/* Destination Details */
 
-viewDetailsButtons.forEach(function(button){
+const modal = document.getElementById("detailsModal");
+const closeBtn = document.getElementById("closeDetails");
 
-    button.addEventListener("click", function(event){
+const image = document.getElementById("detailsImage");
+const title = document.getElementById("detailsTitle");
+const description = document.getElementById("detailsDescription");
+const guides = document.getElementById("detailsGuides");
+const rating = document.getElementById("detailsRating");
+const price = document.getElementById("detailsPrice");
+const about = document.getElementById("detailsAbout");
+
+const detailButtons = document.querySelectorAll(".view-details-btn");
+
+
+/* Open Details */
+
+detailButtons.forEach(button => {
+
+    button.addEventListener("click", event => {
 
         event.stopPropagation();
 
-         const {destination} = button.dataset;
-
+        const destination = button.dataset.destination;
         const details = destinationDetails[destination];
 
-        detailsImage.src = details.image;
+        image.src = details.image;
+        image.alt = details.title;
 
-        detailsImage.alt = details.title;
+        title.textContent = details.title;
+        description.textContent = details.description;
+        guides.textContent = details.guides;
+        rating.textContent = details.rating;
+        price.textContent = details.price;
+        about.textContent = details.about;
 
-        detailsTitle.textContent = details.title;
-
-        detailsDescription.textContent = details.description;
-
-        detailsGuides.textContent = details.guides;
-
-        detailsRating.textContent = details.rating;
-
-        detailsPrice.textContent = details.price;
-
-        detailsAbout.textContent = details.about;
-
-        detailsModal.style.display = "flex";
+        modal.style.display = "flex";
 
     });
 
 });
 
 
-/* Close Destination Details */
+/* Close Details */
 
-closeDetails.addEventListener("click", function(){
-
-    detailsModal.style.display = "none";
-
+closeBtn.addEventListener("click", () => {
+    modal.style.display = "none";
 });
 
 
-/* Close Popup When Clicking Outside */
+/* Close Details When Clicking Outside */
 
-detailsModal.addEventListener("click", function(event){
+modal.addEventListener("click", event => {
 
-    if(event.target === detailsModal){
-
-        detailsModal.style.display = "none";
-
+    if (event.target === modal) {
+        modal.style.display = "none";
     }
 
 });
-
-
 
 
 /* Newsletter Subscribe */
 
 const newsletterForm = document.getElementById("newsletterForm");
 
-newsletterForm.addEventListener("submit", function(event){
+newsletterForm.addEventListener("submit", event => {
 
     event.preventDefault();
 
