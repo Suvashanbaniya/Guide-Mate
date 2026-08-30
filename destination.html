@@ -8,48 +8,40 @@
     <title>Destinations | Guide Mate</title>
 
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/destination.css">
+
 </head>
 
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">
-                <a href="home.html" class="brand-link">
-                    <img src="img/logoo.png" alt="Guide Mate Logo">
-                    <span>Guide Mate</span>
-                </a>
-            </div>
+    <header class="navbar">
+        <div class="logo">
+            <img src="img/logoo.png" alt="Guide Mate Logo">
+            <h2>Guide Mate</h2>
+        </div>
 
-            <ul class="nav-links">
+        <nav>
+            <ul>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="find-guides.html">Find Guides</a></li>
                 <li><a href="destination.html" class="active">Destinations</a></li>
                 <li><a href="payment.html">Bookings</a></li>
                 <li><a href="chat.html">Messages</a></li>
                 <li><a href="reviewpage.html">Reviews</a></li>
-                <li><a href="contactus.html">Contact us </a></li>
-                <li><a href="aboutus.html">About us </a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+                <li><a href="aboutus.html">About us</a></li>
             </ul>
-<!-- Navigation Icons -->
-
-<div class="nav-right">
-
-    <i class="fa-regular fa-bell"></i>
-
-    <img src="imgs/guide1.jpg"
-         alt="Profile"
-         id="profilePic">
-
-</div>
         </nav>
+
+        <div class="nav-icons">
+            <img src="img/profile.jpg" alt="profile" style="cursor:pointer;" onclick="window.location.href='profile.html';">
+        </div>
     </header>
 
     <section class="hero">
@@ -63,12 +55,9 @@
 
                 <i class="fa-solid fa-magnifying-glass"></i>
 
-                <input type="text" 
-                id="searchInput"
-                placeholder="Where do you want to go?">
+                <input type="text" id="searchInput" placeholder="Where do you want to go?">
 
-                <button
-                    id="searchBtn" >
+                <button id="searchBtn">
                     Search</button>
 
             </div>
@@ -77,7 +66,7 @@
 
     </section>
 
-   
+
 
 
     <section class="categories">
@@ -105,78 +94,80 @@
 
     </section>
 
-  
 
 
 
 
-<section class="trending">
 
-    <div class="container">
+    <section class="trending">
 
-        <h2>Trending This Month</h2>
+        <div class="container">
 
-        <div class="trending-grid">
+            <h2>Trending This Month</h2>
 
-            <!-- Large Trending Card -->
+            <div class="trending-grid">
 
-            <div class="large-card" id ="sagarmathaCard">
+                <!-- Large Trending Card -->
 
-                <img src="dimg/sagarmatha.jpg" alt="Sagarmatha">
+                <div class="large-card" id="sagarmathaCard">
 
-                <div class="card-content">
+                    <img src="dimg/sagarmatha.jpg" alt="Sagarmatha">
 
-                    <span class="tag">MOST POPULAR</span>
+                    <div class="card-content">
 
-                    <h3>Sagarmatha , Nepal</h3>
+                        <span class="tag">MOST POPULAR</span>
 
-                    <p>This is the route to sagarmatha and the place is called Sagarmatha National park.
-                        This route is famous for the  Mountain sighting .
-                    </p>
+                        <h3>Sagarmatha , Nepal</h3>
 
-                    <div class="card-footer">
+                        <p>This is the route to sagarmatha and the place is called Sagarmatha National park.
+                            This route is famous for the Mountain sighting .
+                        </p>
 
-                        <span>140+ Guides Available</span>
+                        <div class="card-footer">
 
-                        <span>Starts from <strong>$65/day</strong></span>
+                            <span>140+ Guides Available</span>
+
+                            <span>Starts from <strong>$65/day</strong></span>
+
+                        </div>
 
                     </div>
 
                 </div>
 
-            </div>
+                <!-- Small Trending Cards -->
 
-            <!-- Small Trending Cards -->
+                <div class="small-cards">
 
-            <div class="small-cards">
+                    <!-- Card 1 -->
 
-                <!-- Card 1 -->
+                    <div class="small-card" id="aamaDablamCard">
 
-                <div class="small-card" id = "aamaDablamCard">
+                        <img src="dimg/aama-dablam.jpg" alt="Santorini">
 
-                    <img src="dimg/aama-dablam.jpg" alt="Santorini">
+                        <div class="card-content">
 
-                    <div class="card-content">
+                            <h4>AAma Dablam, Nepal</h4>
 
-                        <h4>AAma Dablam, Nepal</h4>
+                            <p>This is the magnificient view of the Aama Dablam along with stupa .</p>
 
-                        <p>This is the magnificient view of the Aama Dablam along with stupa  .</p>
+                        </div>
 
                     </div>
 
-                </div>
+                    <!-- Card 2 -->
 
-                <!-- Card 2 -->
+                    <div class="small-card">
 
-                <div class="small-card">
+                        <img src="imgs/kori.jpg" alt="Kori">
 
-                    <img src="imgs/kori.jpg" alt="Kori">
+                        <div class="card-content">
 
-                    <div class="card-content">
+                            <h4>Kori,Nepal</h4>
 
-                        <h4>Kori,Nepal</h4>
+                            <p>Journey through the Mountain , jungle and Landscape.</p>
 
-                        <p>Journey through the Mountain , jungle and Landscape.</p>
+                        </div>
 
                     </div>
 
@@ -186,381 +177,371 @@
 
         </div>
 
+    </section>
+
+
+
+    <section class="destinations">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <h2>Explore Popular Destinations</h2>
+
+                    <p>
+                        Discover amazing places with experienced local guides.
+                    </p>
+
+                </div>
+
+                <a href="https://www.google.com/maps/search/Nepal" target="_blank" class="map-btn">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    View Map
+                </a>
+            </div>
+
+
+            <!-- Destination Cards -->
+
+            <div class="destination-grid">
+
+                <!-- Destination Card 1 -->
+
+                <div class="destination-card">
+
+                    <img src="dimg/mustang.jpg" alt="Upper-Mustang">
+
+                    <div class="destination-info">
+
+                        <h3>Mustang, Nepal</h3>
+
+                        <p>Chill paradise with beautiful Mountains and temples.</p>
+
+                        <div class="destination-details">
+
+                            <span>
+                                <i class="fa-solid fa-user"></i>
+                                45 Guides
+                            </span>
+
+                            <span>
+                                ⭐ 4.9
+                            </span>
+
+                        </div>
+
+                        <button class="view-details-btn" data-destination="mustang">
+                            View Details
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Destination Card 2 -->
+
+                <div class="destination-card">
+
+                    <img src="dimg/limi.jpg" alt="Limi">
+
+                    <div class="destination-info">
+
+                        <h3>Limi,Nepal</h3>
+
+                        <p>A peaceful valley under the arms of the mountain .</p>
+
+                        <div class="destination-details">
+
+                            <span>
+                                <i class="fa-solid fa-user"></i>
+                                38 Guides
+                            </span>
+
+                            <span>
+                                ⭐ 4.8
+                            </span>
+
+                        </div>
+
+                        <button class="view-details-btn" data-destination="limi">
+                            View Details
+                        </button>
+                    </div>
+
+                </div>
+                <!-- Destination Card 3 -->
+
+                <div class="destination-card">
+
+                    <img src="dimg/manaslu.jpg" alt="Manaslu">
+
+                    <div class="destination-info">
+
+                        <h3>Manaslu, Nepal</h3>
+
+                        <p>Snowy mountains with breathtaking hiking routes.</p>
+
+                        <div class="destination-details">
+
+                            <span>
+                                <i class="fa-solid fa-user"></i>
+                                24 Guides
+                            </span>
+
+                            <span>
+                                ⭐ 4.9
+                            </span>
+
+                        </div>
+
+                        <button class="view-details-btn" data-destination="manaslu">
+                            View Details
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <!-- Destination Card 4 -->
+
+                <div class="destination-card">
+
+                    <img src="dimg/gokyo.jpg" alt="Gokyo">
+
+                    <div class="destination-info">
+
+                        <h3>Gokyo, Nepal</h3>
+
+                        <p>The stunning view of the mountains.</p>
+
+                        <div class="destination-details">
+
+                            <span>
+                                <i class="fa-solid fa-user"></i>
+                                52 Guides
+                            </span>
+
+                            <span>
+                                ⭐ 5.0
+                            </span>
+
+                        </div>
+
+                        <button class="view-details-btn" data-destination="gokyo">
+                            View Details
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- Load More Destination Card -->
+
+                <div class="destination-card hidden-card" id="pokharaCard">
+
+                    <img src="dimg/garden.jpg" alt="Pokhara">
+
+                    <div class="destination-info">
+
+                        <h3>Garden , Nepal</h3>
+
+                        <p>
+                            This is the best place a quite and peaceful time avoidng the chaos
+                        </p>
+
+                        <div class="destination-details">
+
+                            <span>
+                                <i class="fa-solid fa-user"></i>
+                                60 Guides
+                            </span>
+
+                            <span>
+                                ⭐ 4.9
+                            </span>
+
+                        </div>
+
+                        <button class="view-details-btn" data-destination="Garden">
+                            View Details
+                        </button>
+
+
+                    </div>
+
+                </div>
+
+                <!-- This closes the destination grid -->
+
+            </div>
+
+
+            <!-- Load More Button -->
+
+            <div class="load-more">
+
+                <button id="loadMoreBtn">
+                    Load More Destinations
+                </button>
+
+            </div>
+
+
+    </section>
+    </section>
+
+
+    <!-- Destination Details Popup -->
+
+    <div class="details-modal" id="detailsModal">
+
+        <div class="details-box">
+
+            <button class="close-details" id="closeDetails">
+                &times;
+            </button>
+
+            <img src="" alt="Destination" id="detailsImage">
+
+            <div class="details-content">
+
+                <h2 id="detailsTitle"></h2>
+
+                <p id="detailsDescription"></p>
+
+                <div class="details-info">
+
+                    <span id="detailsGuides"></span>
+
+                    <span id="detailsRating"></span>
+
+                    <span id="detailsPrice"></span>
+
+                </div>
+
+                <h3>About this destination</h3>
+
+                <p id="detailsAbout"></p>
+
+            </div>
+
+        </div>
+
     </div>
 
-</section>
+    <!-- Newsletter  /email  -->
+
+    <section class="newsletter">
+
+        <div class="container">
+
+            <h2>Stay Updated</h2>
+
+            <p>
+                Subscribe to receive travel tips, destination updates and exclusive offers.
+            </p>
+
+            <form class="newsletter-form" id="newsletterForm">
+
+                <input type="email" id="emailInput" placeholder="Enter your email" required>
+
+                <button type="submit">
+                    Subscribe
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
 
 
 
-<section class="destinations">
+    <footer class="footer">
 
-    <div class="container">
+        <div class="footer-container">
 
-        <div class="section-heading">
+            <div class="footer-logo">
 
-            <div>
+                <img src="img/logoo.png" alt="Guide Mate">
 
-                <h2>Explore Popular Destinations</h2>
+                <h2>Guide Mate</h2>
 
                 <p>
-                    Discover amazing places with experienced local guides.
+                    Connecting travelers with trusted local guides around the world.
                 </p>
 
             </div>
 
-            <a 
-    href="https://www.google.com/maps/search/Nepal"
-    target="_blank"
-    class="map-btn"
->
-    <i class="fa-solid fa-map-location-dot"></i>
-    View Map
-</a>
-        </div>
+            <div class="footer-links">
 
+                <h4>Quick Links</h4>
 
-        <!-- Destination Cards -->
+                <a href="home.html">Home</a>
 
-        <div class="destination-grid">
+                <a href="find-guides.html">Find Guides</a>
 
-            <!-- Destination Card 1 -->
+                <a href="destination.html">Destinations</a>
 
-            <div class="destination-card">
+                <a href="payment.html">Bookings</a>
 
-                <img src="dimg/mustang.jpg" alt="Upper-Mustang">
+            </div>
 
-                <div class="destination-info">
+            <div class="footer-links">
 
-                    <h3>Mustang, Nepal</h3>
+                <h4>Support</h4>
 
-                    <p>Chill paradise with beautiful Mountains and temples.</p>
+                <a href="#">Help Center</a>
 
-                    <div class="destination-details">
+                <a href="#">Privacy Policy</a>
 
-                        <span>
-                            <i class="fa-solid fa-user"></i>
-                            45 Guides
-                        </span>
+                <a href="#">Terms & Conditions</a>
 
-                        <span>
-                            ⭐ 4.9
-                        </span>
+                <a href="#">Contact Us</a>
 
-                    </div>
+            </div>
 
-                  <button class="view-details-btn" data-destination="mustang">
-    View Details
-</button>
+            <div class="footer-social">
+
+                <h4>Follow Us</h4>
+
+                <div class="social-icons">
+
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
 
                 </div>
 
             </div>
 
-
-
-            <!-- Destination Card 2 -->
-
-            <div class="destination-card">
-
-                <img src="dimg/limi.jpg" alt="Limi">
-
-                <div class="destination-info">
-
-                    <h3>Limi,Nepal</h3>
-
-                    <p>A peaceful valley under the arms of the mountain .</p>
-
-                    <div class="destination-details">
-
-                        <span>
-                            <i class="fa-solid fa-user"></i>
-                            38 Guides
-                        </span>
-
-                        <span>
-                            ⭐ 4.8
-                        </span>
-
-                    </div>
-
-                    <button class="view-details-btn" data-destination="limi">
-    View Details
-</button>
-                </div>
-
-            </div>
-<!-- Destination Card 3 -->
-
-<div class="destination-card">
-
-    <img src="dimg/manaslu.jpg" alt="Manaslu">
-
-    <div class="destination-info">
-
-        <h3>Manaslu, Nepal</h3>
-
-        <p>Snowy mountains with breathtaking hiking routes.</p>
-
-        <div class="destination-details">
-
-            <span>
-                <i class="fa-solid fa-user"></i>
-                24 Guides
-            </span>
-
-            <span>
-                ⭐ 4.9
-            </span>
-
         </div>
 
-        <button class="view-details-btn" data-destination="manaslu">
-    View Details
-</button>
-    </div>
-
-</div>
-
-
-<!-- Destination Card 4 -->
-
-<div class="destination-card">
-
-    <img src="dimg/gokyo.jpg" alt="Gokyo">
-
-    <div class="destination-info">
-
-        <h3>Gokyo, Nepal</h3>
-
-        <p>The stunning view of the mountains.</p>
-
-        <div class="destination-details">
-
-            <span>
-                <i class="fa-solid fa-user"></i>
-                52 Guides
-            </span>
-
-            <span>
-                ⭐ 5.0
-            </span>
-
-        </div>
-
-       <button class="view-details-btn" data-destination="gokyo">
-    View Details
-</button>
-
-
-    </div>
-
-</div>
-
-
-<!-- Load More Destination Card -->
-
-<div class="destination-card hidden-card" id="pokharaCard">
-
-    <img src="dimg/garden.jpg" alt="Pokhara">
-
-    <div class="destination-info">
-
-        <h3>Garden  , Nepal</h3>
-
-        <p>
-            This is the best place a quite and peaceful time avoidng the chaos 
-        </p>
-
-        <div class="destination-details">
-
-            <span>
-                <i class="fa-solid fa-user"></i>
-                60 Guides
-            </span>
-
-            <span>
-                ⭐ 4.9
-            </span>
-
-        </div>
-
-       <button class="view-details-btn" data-destination="Garden">
-    View Details
-</button>
-
-
-    </div>
-
-</div>
-
-<!-- This closes the destination grid -->
-
-</div>
-
-
-<!-- Load More Button -->
-
-<div class="load-more">
-
-    <button id="loadMoreBtn">
-        Load More Destinations
-    </button>
-
-</div>
-
-
-</section>
-</section>
-
-
-<!-- Destination Details Popup -->
-
-<div class="details-modal" id="detailsModal">
-
-    <div class="details-box">
-
-        <button class="close-details" id="closeDetails">
-            &times;
-        </button>
-
-        <img src="" alt="Destination" id="detailsImage">
-
-        <div class="details-content">
-
-            <h2 id="detailsTitle"></h2>
-
-            <p id="detailsDescription"></p>
-
-            <div class="details-info">
-
-                <span id="detailsGuides"></span>
-
-                <span id="detailsRating"></span>
-
-                <span id="detailsPrice"></span>
-
-            </div>
-
-            <h3>About this destination</h3>
-
-            <p id="detailsAbout"></p>
-
-        </div>
-
-    </div>
-
-</div>
-
-<!-- Newsletter  /email  -->
-
-<section class="newsletter">
-
-    <div class="container">
-
-        <h2>Stay Updated</h2>
-
-        <p>
-            Subscribe to receive travel tips, destination updates and exclusive offers.
-        </p>
-
-        <form class="newsletter-form" id="newsletterForm">
-
-            <input 
-                type="email" 
-                id="emailInput"
-                placeholder="Enter your email"
-                required
-            >
-
-            <button type="submit">
-                Subscribe
-            </button>
-
-        </form>
-
-    </div>
-
-</section>
-
-
-
-<footer class="footer">
-
-    <div class="footer-container">
-
-        <div class="footer-logo">
-
-            <img src="img/logoo.png" alt="Guide Mate">
-
-            <h2>Guide Mate</h2>
+        <div class="footer-bottom">
 
             <p>
-                Connecting travelers with trusted local guides around the world.
+                © 2026 Guide Mate. All Rights Reserved.
             </p>
 
         </div>
 
-        <div class="footer-links">
-
-            <h4>Quick Links</h4>
-
-            <a href="home.html">Home</a>
-
-            <a href="find-guides.html">Find Guides</a>
-
-            <a href="destination.html">Destinations</a>
-
-            <a href="payment.html">Bookings</a>
-
-        </div>
-
-        <div class="footer-links">
-
-            <h4>Support</h4>
-
-            <a href="#">Help Center</a>
-
-            <a href="#">Privacy Policy</a>
-
-            <a href="#">Terms & Conditions</a>
-
-            <a href="#">Contact Us</a>
-
-        </div>
-
-        <div class="footer-social">
-
-            <h4>Follow Us</h4>
-
-            <div class="social-icons">
-
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
-
-        <p>
-            © 2026 Guide Mate. All Rights Reserved.
-        </p>
-
-    </div>
-
-</footer>
+    </footer>
 
 
 
-<script src="js/destination.js"></script>
+    <script src="js/destination.js"></script>
+
 
 
 </body>

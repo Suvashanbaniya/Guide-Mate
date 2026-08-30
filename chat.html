@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,487 +10,433 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Font Awesome -->
     <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/chat.css">
+
 </head>
 
 <body>
 
-<!-- Navigation -->
+    <!-- Navigation -->
 
-<header class="navbar">
+    <header class="navbar">
 
-    <div class="logo">
-
-        <img src="img/logoo.png" alt="Guide Mate Logo">
-
-        <h2>Guide Mate</h2>
-
-    </div>
-
-    <nav>
-
-        <a href="home.html">Home</a>
-        <a href="find-guides.html">Find Guides</a>
-        <a href="destination.html">Destinations</a>
-        <a href="payment.html">Bookings</a>
-        <a href="chat.html" class="active">Messages</a>
-        <a href="reviewpage.html">Reviews</a>
-        <a href="reviewpage.html">Reviews</a>
-<a href="contactus.html">Contact us</a>
-<a href="aboutus.html">About us</a>
-    </nav>
-
-    <div class="nav-right">
-
-        <div class="search-box">
-
-            <i class="fa-solid fa-magnifying-glass"></i>
-
-            <input
-                type="text"
-                placeholder="Search chats..."
-            >
-
+        <div class="logo">
+            <img src="img/logoo.png" alt="Guide Mate Logo">
+            <h2>Guide Mate</h2>
         </div>
 
-        <i class="fa-regular fa-bell"></i>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="find-guides.html">Find Guides</a></li>
+                <li><a href="destination.html">Destinations</a></li>
+                <li><a href="payment.html">Bookings</a></li>
+                <li><a href="chat.html" class="active">Messages</a></li>
+                <li><a href="reviewpage.html">Reviews</a></li>
+                <li><a href="contactus.html">Contact us</a></li>
+                <li><a href="aboutus.html">About us</a></li>
+            </ul>
+        </nav>
 
-        <img
-            src="imgs/guide1.jpg"
-            class="profile"
-            alt="profile"
-            style="cursor:pointer;"
-            onclick="window.location.href='profile.html';"
-        >
-
-    </div>
-
-</header>
-
-<!-- Main Chat -->
-
-<main class="chat-page">
-
-
-<!-- Sidebar -->
-
-
-<aside class="sidebar">
-
-    <div class="sidebar-header">
-
-        <h2>Conversations</h2>
-
-        <button>
-
-            <i class="fa-solid fa-sliders"></i>
-
-        </button>
-
-    </div>
-
-
-
-    
-    <div class="conversation-list">
-
-<!-- Conversation 1 -->
-
-<div class="chat-card active"
-     data-name="Prachanda"
-     data-image="users/prachanda.jpg">
-
-    <div class="avatar">
-
-        <img src="users/prachanda.jpg" alt="Guide">
-
-        <span class="online"></span>
-
-    </div>
-
-    <div class="chat-info">
-
-        <div class="chat-top">
-
-            <h4>Prachanda</h4>
-
-            <span>10:45 AM</span>
-
+        <div class="nav-icons">
+            <img src="img/profile.jpg"
+                alt="profile"
+                style="cursor:pointer;"
+                onclick="window.location.href='profile.html';">
         </div>
 
-        <p>
-            That sounds like a great plan for the Everest Base Camp trek!
-            We can do something bomb thing here.
-        </p>
-
-    </div>
-
-</div>
+    </header>
 
 
-<!-- Conversation 2 -->
+    <!-- Main Chat -->
 
-<div class="chat-card"
-     data-name="Donald Trump"
-     data-image="users/trump.jpg">
-
-    <div class="avatar">
-
-        <img src="users/trump.jpg" alt="Guide">
-
-    </div>
-
-    <div class="chat-info">
-
-        <div class="chat-top">
-
-            <h4>Donald Trump</h4>
-
-            <span>Yesterday</span>
-
-        </div>
-
-        <p>
-            Offer: $450 - Pending
-        </p>
-
-    </div>
-
-</div>
+    <main class="chat-page">
 
 
-<!-- Conversation 3 -->
+        <!-- Sidebar -->
 
-<div class="chat-card"
-     data-name="Charlie"
-     data-image="users/charlie.jpg">
+        <aside class="sidebar">
 
-    <div class="avatar">
+            <div class="sidebar-header">
 
-        <img src="users/charlie.jpg" alt="Guide">
+                <h2>Conversations</h2>
 
-    </div>
+                <button>
+                    <i class="fa-solid fa-sliders"></i>
+                </button>
 
-    <div class="chat-info">
-
-        <div class="chat-top">
-
-            <h4>Charlie</h4>
-
-            <span>Oct 12</span>
-
-        </div>
-
-        <p>
-            Thanks for the booking! See you soon.
-        </p>
-
-    </div>
-
-</div>
-
-</aside>
+            </div>
 
 
+            <div class="conversation-list">
+
+                <!-- Conversation 1 -->
+
+                <div class="chat-card active"
+                    data-name="Prachanda"
+                    data-image="users/prachanda.jpg">
+
+                    <div class="avatar">
+
+                        <img src="users/prachanda.jpg" alt="Guide">
+
+                        <span class="online"></span>
+
+                    </div>
+
+                    <div class="chat-info">
+
+                        <div class="chat-top">
+
+                            <h4>Prachanda</h4>
+
+                            <span>10:45 AM</span>
+
+                        </div>
+
+                        <p>
+                            That sounds like a great plan for the Everest Base Camp trek!
+                        </p>
+
+                    </div>
+
+                </div>
 
 
-<!-- Chat Area -->
+                <!-- Conversation 2: Narendra Modi -->
+
+                <div class="chat-card"
+                    data-name="Narendra Modi"
+                    data-image="users/modi.jpg">
+
+                    <div class="avatar">
+
+                        <img src="users/modi.jpg" alt="Guide">
+
+                        <span class="online"></span>
+
+                    </div>
+
+                    <div class="chat-info">
+
+                        <div class="chat-top">
+
+                            <h4>Narendra Modi</h4>
+
+                            <span>09:30 AM</span>
+
+                        </div>
+
+                        <p>
+                            This is the best thing I like about Nepal...
+                        </p>
+
+                    </div>
+
+                </div>
 
 
-<section class="chat-area">
+                <!-- Conversation 3: Donald Trump -->
 
-    <!-- Chat Header -->
+                <div class="chat-card"
+                    data-name="Donald Trump"
+                    data-image="users/trump.jpg">
 
-    <div class="chat-header">
+                    <div class="avatar">
 
-        <div class="guide-details">
+                        <img src="users/trump.jpg" alt="Guide">
 
-            <img src="users/modi.jpg" alt="Guide">
+                    </div>
 
-            <div>
+                    <div class="chat-info">
 
-                <h3>Narendra Modi</h3>
+                        <div class="chat-top">
+
+                            <h4>Donald Trump</h4>
+
+                            <span>Yesterday</span>
+
+                        </div>
+
+                        <p>
+                            Offer: $450 - Pending
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Conversation 4: Ram Bahadur -->
+
+                <div class="chat-card"
+                    data-name="Ram Bahadur"
+                    data-image="users/old_guide.jpg">
+
+                    <div class="avatar">
+
+                        <img src="users/old_guide.jpg" alt="Guide">
+
+                        <span class="online"></span>
+
+                    </div>
+
+                    <div class="chat-info">
+
+                        <div class="chat-top">
+
+                            <h4>Ram Bahadur</h4>
+
+                            <span>08:25 AM</span>
+
+                        </div>
+
+                        <p>
+                            45+ years Himalayan guiding experience.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Conversation 5: Charlie -->
+
+                <div class="chat-card"
+                    data-name="Charlie"
+                    data-image="users/charlie.jpg">
+
+                    <div class="avatar">
+
+                        <img src="users/charlie.jpg" alt="Guide">
+
+                    </div>
+
+                    <div class="chat-info">
+
+                        <div class="chat-top">
+
+                            <h4>Charlie</h4>
+
+                            <span>Oct 12</span>
+
+                        </div>
+
+                        <p>
+                            Thanks for the booking! See you soon.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+
+        <!-- Chat Area -->
+
+        <section class="chat-area">
+
+
+            <!-- Chat Header -->
+
+            <div class="chat-header">
+
+                <div class="guide-details">
+
+                    <img src="users/modi.jpg" alt="Guide">
+
+                    <div>
+
+                        <h3>Narendra Modi</h3>
+
+                        <p>
+
+                            <span class="status"></span>
+
+                            This is the best thing I like about Nepal
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="chat-actions">
+
+                    <button class="translate-btn">
+
+                        <i class="fa-solid fa-language"></i>
+
+                        Translate
+
+                        <i class="fa-solid fa-chevron-down"></i>
+
+                    </button>
+
+                    <button>
+                        <i class="fa-solid fa-phone"></i>
+                    </button>
+
+                    <button>
+                        <i class="fa-solid fa-video"></i>
+                    </button>
+
+                    <button>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Chat Messages -->
+
+            <div class="messages">
+
+                <!--
+                    Messages are loaded dynamically
+                    from chat.js using loadMessages()
+                -->
+
+            </div>
+
+
+            <!-- Message Input -->
+
+            <div class="message-input">
+
+                <button class="input-icon">
+
+                    <i class="fa-regular fa-face-smile"></i>
+
+                </button>
+
+                <button class="input-icon">
+
+                    <i class="fa-solid fa-paperclip"></i>
+
+                </button>
+
+                <input type="text"
+                    placeholder="Type your message...">
+
+                <button class="send-btn">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer class="footer">
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+
+                <img src="img/logoo.png" alt="Guide Mate">
+
+                <h2>Guide Mate</h2>
 
                 <p>
-
-                    <span class="status"></span>
-
-                  This is the best thing I like about Nepal
-
+                    Connecting travelers with trusted local guides around the world.
                 </p>
 
             </div>
 
-        </div>
 
-        <div class="chat-actions">
+            <div class="footer-links">
 
-            <button class="translate-btn">
+                <h4>Quick Links</h4>
 
-                <i class="fa-solid fa-language"></i>
+                <a href="#">Home</a>
 
-                Translate
+                <a href="#">Find Guides</a>
 
-                <i class="fa-solid fa-chevron-down"></i>
+                <a href="#">Destinations</a>
 
-            </button>
-
-            <button>
-                <i class="fa-solid fa-phone"></i>
-            </button>
-
-            <button>
-                <i class="fa-solid fa-video"></i>
-            </button>
-
-            <button>
-                <i class="fa-solid fa-ellipsis-vertical"></i>
-            </button>
-
-        </div>
-
-    </div>
-
-
-
-    <!-- Chat Messages -->
-
-    <div class="messages">
-
-
-        <!-- Today -->
-
-<div class="date-divider">
-
-    <span>Today</span>
-
-</div>
-
-<!-- Guide Message -->
-
-<div class="message guide-message">
-
-    <div class="bubble">
-
-        <p>
-            Hello! I've reviewed your request for the 12-day trek. Since it's peak season, my daily rate is slightly higher, but I can include specialized oxygen equipment.
-        </p>
-
-    </div>
-
-    <span class="time">10:30 AM</span>
-
-</div>
-
-<!-- Custom Offer -->
-
-<div class="message guide-message">
-
-    <div class="offer-card">
-
-        <div class="offer-header">
-
-            <div class="offer-title">
-
-                <i class="fa-solid fa-money-check-dollar"></i>
-
-                <span>Custom Offer</span>
+                <a href="#">Bookings</a>
 
             </div>
 
-            <span class="premium">PREMIUM</span>
 
-        </div>
+            <div class="footer-links">
 
-        <div class="offer-body">
+                <h4>Support</h4>
 
-            <h2>$850.00</h2>
+                <a href="#">Help Center</a>
 
-            <p>
-                Includes 12 days guiding, equipment rentals, and basic mountain insurance.
-            </p>
+                <a href="#">Privacy Policy</a>
 
-            <div class="offer-buttons">
+                <a href="#">Terms & Conditions</a>
 
-                <button class="accept-btn">
+                <a href="#">Contact Us</a>
 
-                    Accept Offer
+            </div>
 
-                </button>
 
-                <button class="reject-btn">
+            <div class="footer-social">
 
-                    Reject
+                <h4>Follow Us</h4>
 
-                </button>
+                <div class="social-icons">
+
+                    <a href="#">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+
+                    <a href="#">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                </div>
 
             </div>
 
         </div>
 
-    </div>
 
-    <span class="time">10:32 AM</span>
-
-</div>
-
-<!-- Tourist Message -->
-
-<div class="message tourist-message">
-
-    <div class="bubble">
-
-        <p>
-            That's slightly above my budget. Would you be open to $750 if I provide my own sleeping bag and down jacket?
-        </p>
-
-    </div>
-
-    <span class="time">
-        10:40 AM
-        <i class="fa-solid fa-circle-check"></i>
-    </span>
-
-</div>
-
-<!-- Guide Reply -->
-
-<div class="message guide-message">
-
-    <div class="bubble">
-
-        <p>
-            That sounds like a great plan for the Everest Base Camp trek! I can definitely adjust the price for you. How about $800 as a final price?
-        </p>
-
-    </div>
-
-    <span class="time">10:45 AM</span>
-
-</div>
-
-
-
-
-<!-- Message Input -->
-
-</div>
-
-<div class="message-input">
-
-    <button class="input-icon">
-
-        <i class="fa-regular fa-face-smile"></i>
-
-    </button>
-
-    <button class="input-icon">
-
-        <i class="fa-solid fa-paperclip"></i>
-
-    </button>
-
-    <input
-        type="text"
-        placeholder="Type your message..."
-    >
-
-    <button class="send-btn">
-
-        <i class="fa-solid fa-paper-plane"></i>
-
-    </button>
-
-</div>
-
-</section>
-
-</main>
-
-<!-- Footer -->
-
-<footer class="footer">
-
-    <div class="footer-container">
-
-        <div class="footer-logo">
-
-            <img src="img/logoo.png" alt="Guide Mate">
-
-            <h2>Guide Mate</h2>
+        <div class="footer-bottom">
 
             <p>
-                Connecting travelers with trusted local guides around the world.
+                © 2026 Guide Mate. All Rights Reserved.
             </p>
 
         </div>
 
-        <div class="footer-links">
+    </footer>
 
-            <h4>Quick Links</h4>
 
-            <a href="#">Home</a>
-
-            <a href="#">Find Guides</a>
-
-            <a href="#">Destinations</a>
-
-            <a href="#">Bookings</a>
-
-        </div>
-
-        <div class="footer-links">
-
-            <h4>Support</h4>
-
-            <a href="#">Help Center</a>
-
-            <a href="#">Privacy Policy</a>
-
-            <a href="#">Terms & Conditions</a>
-
-            <a href="#">Contact Us</a>
-
-        </div>
-
-        <div class="footer-social">
-
-            <h4>Follow Us</h4>
-
-            <div class="social-icons">
-
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="footer-bottom">
-
-        <p>
-            © 2026 Guide Mate. All Rights Reserved.
-        </p>
-
-    </div>
-
-</footer>
-
-<script src="js/chat.js"></script>
+    <script src="js/chat.js"></script>
 
 </body>
+
 </html>

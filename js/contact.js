@@ -72,7 +72,7 @@ contactForm.addEventListener("submit", function (event) {
 
 
 //-------- Function to Show Notification --------
-function showMessage(text, type) {
+function showMessage(text, type) {  // type is waring or error 
 
     //-------- Check if a previous notification exists --------
     const oldMessage =

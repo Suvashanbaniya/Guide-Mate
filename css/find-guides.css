@@ -48,6 +48,9 @@ body{
 .logo h2{
     color:#0B4EA2;
     font-size:24px;
+    font-weight:700;
+    line-height:1;
+    margin:0;
 }
 
 
@@ -57,32 +60,22 @@ nav ul{
     display:flex;
     list-style:none;
     gap:35px;
+    margin:0;
+    padding:0;
+    align-items:center;
 }
 
-nav ul li a{
+nav ul li a, nav a{
     text-decoration:none;
     color:#555;
     font-size:16px;
+    font-weight:500;
     transition:.3s;
+    white-space:nowrap;
 }
 
-nav ul li a:hover{
-    color:#0B63CE;
-    font-weight:600;
-}
-
-nav a{
-    text-decoration:none;
-    color:#555;
-    font-size:16px;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#0B63CE;
-}
-
-nav a.active{
+nav ul li a:hover, nav a:hover,
+nav ul li a.active, nav a.active{
     color:#0B63CE;
     font-weight:600;
 }
@@ -832,6 +825,13 @@ nav a.active{
 
     .filter-pannel{
         padding:20px;
+    }
+}
+
+@media(max-width:480px){
+
+    nav ul li a, nav a, .nav-links a{
+        font-size:14px;
     }
 
     .guide-header h2{

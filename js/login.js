@@ -28,7 +28,7 @@ signupTab.addEventListener("click", function(){
     loginTab.classList.remove("active");
 
     loginSection.style.display = "none";
-    signupSection.style.display = "block";
+    signupSection.style.display = "block"; // show the page 
 
 });
 
