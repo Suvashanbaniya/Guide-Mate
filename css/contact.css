@@ -442,7 +442,7 @@ img{
     min-width: 320px;
     max-width: 450px;
 
-    padding: 16px 20px;
+    padding: 16px 20px;      /* this code hide the notification */
 
     background: #ffffff;
 
@@ -469,7 +469,7 @@ img{
 
 .contact-notification.show {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(0); 
 }
 
 

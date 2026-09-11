@@ -72,7 +72,7 @@ function filterGuides(){
             parseFloat(
                 card.querySelector(".rating")
                 .textContent
-                .match(/[\d.]+/)[0]
+                .match(/[\d.]+/)[0]  /* d means 0 - 9 rating */
             );
 
 
@@ -82,7 +82,7 @@ function filterGuides(){
             parseFloat(
                 card.querySelector(".guide-top span")
                 .textContent
-                .replace(/[^0-9.]/g, "")
+                .replace(/[^0-9.]/g, "") /* remove the letters and keep only the numbers */
             );
 
 

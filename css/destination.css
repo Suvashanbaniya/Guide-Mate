@@ -293,7 +293,7 @@ nav ul li a.active, .nav-links a.active{
 }
 
 .search-box input{
-    flex:1;
+    flex:1; /* fill the remaining space in the container */
     border:none;
     outline:none;
     padding:18px;

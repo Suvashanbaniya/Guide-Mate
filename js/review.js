@@ -1,6 +1,10 @@
-document.getElementById("profilePic").addEventListener("click", function () {
-    window.location.href = "profile.html";
-});
+const profilePic = document.getElementById("profilePic");
+
+if (profilePic) {
+    profilePic.addEventListener("click", function () {
+        window.location.href = "profile.html";
+    });
+}
 
 /* Get the textarea from the HTML */
 const reviewText = document.getElementById("reviewText");
