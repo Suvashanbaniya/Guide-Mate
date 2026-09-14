@@ -7,6 +7,10 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import com.guidemate.dao.UserDAO;
+import com.guidemate.model.user;
 
 /**
  * Servlet implementation for handling user login requests.
@@ -31,15 +35,35 @@ public class LoginServlet extends HttpServlet {
                           HttpServletResponse response)
             throws ServletException, IOException {
 
-        // Get the values entered in the login form
+        // Get email and password from the login form
         String email = request.getParameter("email");
         String password = request.getParameter("password");
 
-        // Temporary test response
-        response.setContentType("text/html");
-        response.getWriter().println("<h1>Login Data Received</h1>");
-        response.getWriter().println("<p>Email: " + email + "</p>");
-        response.getWriter().println("<p>Password received successfully.</p>");
+        // Basic validation
+        if (email == null || email.trim().isEmpty()
+                || password == null || password.trim().isEmpty()) {
+
+        	response.sendRedirect("login.html?error=empty");
+            return;
+        }
+
+        // Create UserDAO object
+        UserDAO userDAO = new UserDAO();
+
+        // Check the database for the user
+        user loggedInUser = userDAO.login(email, password);
+
+        if (loggedInUser != null) {
+
+            HttpSession session = request.getSession();
+            session.setAttribute("user", loggedInUser);
+
+            response.sendRedirect("home.html");
+
+        } else {
+
+        	response.sendRedirect("login.html?error=invalid");
+        }
     }
 
     /**
@@ -52,7 +76,7 @@ public class LoginServlet extends HttpServlet {
      */
     @Override
     protected void doGet(HttpServletRequest request,
-                         HttpServletResponse response)
+                          HttpServletResponse response)
             throws ServletException, IOException {
 
         response.sendRedirect("login.jsp");

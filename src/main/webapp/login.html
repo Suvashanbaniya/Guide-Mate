@@ -129,10 +129,10 @@
                 </p>
 
 
-                <form
-                    id="loginForm"
-                    onsubmit="event.preventDefault(); window.location.href='home.html';">
-
+               <form
+    id="loginForm"
+    action="LoginServlet"
+    method="post">
 
                     <label>
                         Email Address
@@ -140,6 +140,7 @@
 
                     <input
                         type="email"
+                        name="email"
                         placeholder="suvashan@example.com"
                         required>
 
@@ -152,6 +153,7 @@
 
                     <input
                         type="password"
+                        name="password"
                         placeholder="***********"
                         required>
 
