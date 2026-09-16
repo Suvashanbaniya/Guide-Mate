@@ -255,7 +255,9 @@
 
 
 
-                <form id="signupForm">
+                   <form id="signupForm"
+      action="SignupServlet"
+      method="post">
 
 
                     <!-- -------- Personal Information -------- -->
@@ -272,6 +274,7 @@
                     <input
                         type="text"
                         id="fullName"
+                        name="name"
                         placeholder="Enter your full name"
                         required>
 
@@ -282,6 +285,7 @@
 
                     <input
                         type="email"
+                        name="email"
                         id="signupEmail"
                         placeholder="Enter your email"
                         required>
@@ -294,6 +298,7 @@
                     <input
                         type="tel"
                         id="phone"
+                        name="phone"
                         placeholder="Enter your phone number"
                         required>
 
@@ -305,6 +310,7 @@
                     <input
                         type="text"
                         id="city"
+                        name="city"
                         placeholder="e.g. Kathmandu"
                         required>
 
@@ -468,6 +474,7 @@
                     <input
                         type="password"
                         id="password"
+                        name="password"
                         placeholder="Create a password"
                         required>
 
