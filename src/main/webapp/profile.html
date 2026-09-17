@@ -57,15 +57,15 @@
 
 
 <nav class="sidebar-menu">
-    <button class="menu-item active">
-        <i class="fa-solid fa-user-pen"></i>
-        <span>Edit Profile</span>
-    </button>
+   <button class="menu-item active" id="editProfileBtn">
+    <i class="fa-solid fa-user-pen"></i>
+    <span>Edit Profile</span>
+</button>
 
-    <button class="menu-item">
-        <i class="fa-solid fa-lock"></i>
-        <span>Change Password</span>
-    </button>
+    <button class="menu-item" id="changePasswordBtn">
+    <i class="fa-solid fa-lock"></i>
+    <span>Change Password</span>
+</button>
 
     <button class="menu-item">
         <i class="fa-solid fa-bell"></i>
@@ -95,8 +95,58 @@
 
         <!-- Right Content Area -->
         <section class="profile-content">
+        
+        
+        
+        
+        <!-- Change Password Section -->
+<div class="section" id="changePasswordSection" style="display: none;">
+
+    <div class="section-header">
+        <h2>Change Password</h2>
+    </div>
+
+    <form id="changePasswordForm">
+
+        <div class="form-group">
+            <label for="currentPassword">Current Password</label>
+            <input
+                type="password"
+                id="currentPassword"
+                name="currentPassword"
+                placeholder="Enter your current password"
+                required>
+        </div>
+
+        <div class="form-group">
+            <label for="newPassword">New Password</label>
+            <input
+                type="password"
+                id="newPassword"
+                name="newPassword"
+                placeholder="Enter your new password"
+                required>
+        </div>
+
+        <div class="form-group">
+            <label for="confirmNewPassword">Confirm New Password</label>
+            <input
+                type="password"
+                id="confirmNewPassword"
+                name="confirmNewPassword"
+                placeholder="Confirm your new password"
+                required>
+        </div>
+
+        <button type="submit" class="save-btn">
+            Change Password
+        </button>
+
+    </form>
+
+</div>
             <!-- Profile Information Section -->
-            <div class="section">
+            <div class="section" id="profileInformationSection">
                 <div class="section-header">
                     <h2>Profile Information</h2>
                     <button class="save-btn">Save Changes</button>
