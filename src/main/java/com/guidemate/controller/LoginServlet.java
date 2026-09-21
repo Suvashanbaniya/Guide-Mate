@@ -12,73 +12,80 @@ import javax.servlet.http.HttpSession;
 import com.guidemate.dao.UserDAO;
 import com.guidemate.model.user;
 
-/**
- * Servlet implementation for handling user login requests.
- *
- * @author GuideMate Development Team
- */
 @WebServlet("/LoginServlet")
 public class LoginServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
 
     /**
-     * Handles POST requests from the login form.
+     * Processes login requests sent using the POST method.
      *
-     * @param request HTTP request containing login information
-     * @param response HTTP response sent back to the user
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an input or output error occurs
+     *  request the HTTP request containing the login details
+     * response the HTTP response used for redirection
+     * ServletException if a servlet-related error occurs
+     *  IOException if an input or output error occurs
      */
     @Override
     protected void doPost(HttpServletRequest request,
                           HttpServletResponse response)
             throws ServletException, IOException {
 
-        // Get email and password from the login form
+        // Get the email and password entered by the user.
         String email = request.getParameter("email");
         String password = request.getParameter("password");
 
-        // Basic validation
+        // Check whether the required login fields are empty.
         if (email == null || email.trim().isEmpty()
                 || password == null || password.trim().isEmpty()) {
 
-        	response.sendRedirect("login.html?error=empty");
+            response.sendRedirect("login.html?error=empty");
             return;
         }
 
-        // Create UserDAO object
+        // Create the DAO object used to communicate with the database.
         UserDAO userDAO = new UserDAO();
 
-        // Check the database for the user
+        // Check the email and password against the database.
         user loggedInUser = userDAO.login(email, password);
 
+        // Check whether the login was successful.
         if (loggedInUser != null) {
 
+            // Create a session for the logged-in user.
             HttpSession session = request.getSession();
+
+            // Store the user object in the session.
             session.setAttribute("user", loggedInUser);
 
-            response.sendRedirect("home.html");
+            /*
+             * Check the user's role.
+             *
+             * Admin users go to the admin dashboard. 
+             * the admin and user are from the database 
+             * Other users go to the normal home page.
+             */
+            if ("admin".equalsIgnoreCase(loggedInUser.getRole())) {
+
+                response.sendRedirect("admin.html");
+
+            } else {
+
+                response.sendRedirect("home.html");
+            }
 
         } else {
 
-        	response.sendRedirect("login.html?error=invalid");
+            // Login failed because the email or password was incorrect.
+            response.sendRedirect("login.html?error=invalid");
         }
     }
-
-    /**
-     * Handles GET requests.
-     *
-     * @param request HTTP request
-     * @param response HTTP response
-     * @throws ServletException if a servlet-specific error occurs
-     * @throws IOException if an input or output error occurs
-     */
+//If someone accesses the login servlet directly with GET, send them to the login page.
+    
     @Override
     protected void doGet(HttpServletRequest request,
-                          HttpServletResponse response)
+                         HttpServletResponse response)
             throws ServletException, IOException {
 
-        response.sendRedirect("login.jsp");
+        response.sendRedirect("login.html");
     }
 }
